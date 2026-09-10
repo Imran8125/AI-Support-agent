@@ -8,7 +8,7 @@
 ### 1.1 What "Good" Means for AppleSupport
 On Twitter (`@AppleSupport`), the standard of customer care differs fundamentally from e-commerce or delivery platforms. An e-commerce bot can often resolve an inquiry with a tracking link or order refund; an airline bot requires a booking reference. In contrast, **Apple Support interactions are diagnostic, reputation-critical, and technically nuanced**:
 1. **Accurate Triage without False Promises:** Apple customers face complex hardware/software issues (e.g. rapid battery discharge after iOS updates, iCloud account lockouts, FaceTime activation errors, crackling speakers). A "good" support agent must identify the underlying technical domain, ask precise diagnostic triage questions (*"What iOS version are you running?", "Does this occur on Wi-Fi or cellular?"*), and provide official Apple KB documentation without ever inventing warranty policies, device replacement guarantees, or fake diagnostic links.
-2. **Defensive Safety & Escalation:** Physical hardware defects, water damage, stolen devices involving police reports, and explicit legal or harassment threats cannot be automated. "Good" means knowing when **not** to answerâ€”escalating immediately to human specialists with a clear, stated justification.
+2. **Defensive Safety & Escalation:** Physical hardware defects, water damage, stolen devices involving police reports, and explicit legal or harassment threats cannot be automated. "Good" means knowing when **not** to answer—escalating immediately to human specialists with a clear, stated justification.
 3. **Succinct Brand Persona:** Replies must strictly adhere to Apple's signature empathetic, calm, and professional tone within Twitter's 240-character length limit.
 
 ### 1.2 What We Chose *Not* to Build (Explicit Out-of-Scope Decisions)
@@ -23,12 +23,12 @@ Per PRD §1, the following features were deliberately scoped out to preserve eva
 
 ```
 Raw Twitter Dataset (twcs.csv)
-        â”‚
-        â–¼
+        │
+        ▼
 [1] Temporal Split & Thread Reconstruction (Zero-Leakage: 80% KB / 20% Held-Out)
-        â”‚
-        â”œâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”¬â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”�
-        â–¼                                        â–¼                                        â–¼
+        │
+        ├────────────────────────────────────────┬────────────────────────────────────────┐
+        ▼                                        ▼                                        ▼
 [2] 9-Class Intent Taxonomy              [3] Resolution KB (1,500 cases)          [4] Golden Set (162 items)
     (BGE Embeddings + K-Means)               (Resolution Proxy Heuristic + ONNX)      (Stratified Held-Out Slice)
         │                                        │                                        │

@@ -34,7 +34,7 @@ We employed **stratified sampling** with mild oversampling of rare classes:
 | `hardware_screen_audio`| 18 | Screen black, crackling speaker, water damage | Hybrid (Escalate if hardware damaged $\rightarrow$ Genius Bar) |
 | `orders_repairs_store` | 18 | iPhone X shipping delay, trade-in, repairs | Auto-handle (Store reservation / tracking policy) |
 | `theft_lost_legal` | 18 | Stolen Mac, police complaint, lawsuit threats | **Mandatory Escalate (100% human agent)** |
-| `other_unclear` | 18 | Non-English, vague rants, emojis | Auto-handle (Polite clarifying question) |
+| `other_unclear` | 18 | Non-English queries, vague rants, symbol-only messages | Auto-handle (Polite clarifying question) |
 
 ---
 

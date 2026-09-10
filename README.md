@@ -5,7 +5,7 @@ An end-to-end, production-grade AI support agent pipeline for **AppleSupport** b
 
 ---
 
-## ⏱ Quickstart: Reproduce Headline Results in < 15 Minutes
+## Quickstart: Reproduce Headline Results in < 15 Minutes
 
 ### 1. Prerequisites & Setup
 Ensure you have Python 3.9+ installed:
@@ -88,57 +88,92 @@ F1-Score:  35.00%
 
 ---
 
-## 🏗️ Repository Architecture
+## Repository Architecture
 
+```text
+ai-support-agent/
+├── data/
+│   ├── banking77/                     # Secondary benchmark dataset (Banking77)
+│   ├── eval_results/                  # Cached evaluation runs & benchmark reports
+│   │   ├── agent_eval_outputs.json    # System agent test predictions on golden set
+│   │   ├── baselines_results.json     # Baseline A & B evaluation outputs
+│   │   └── benchmark_report.json      # Aggregated headline metric report
+│   ├── processed/                     # Leakage-free processed artifacts & knowledge bases
+│   │   ├── apple_threads.jsonl        # 106,625 reconstructed conversation chains
+│   │   ├── historical_kb.jsonl        # 80% chronological split (KB & baseline training)
+│   │   ├── eval_pool.jsonl            # 20% held-out chronological slice (evaluation pool)
+│   │   ├── resolution_kb.json         # 1,500 resolved cases indexed by intent
+│   │   └── resolution_kb_vectors.npy  # Pre-computed 384-d dense BGE embeddings
+│   ├── candidate_brands_analysis.json # Empirical comparison of 4 candidate brands
+│   ├── clustering_diagnostics.json    # K-Means silhouette sweeps across cluster counts
+│   ├── taxonomy.json                  # Derived 9-class intent schema with descriptions
+│   ├── twcs_top_brands.json           # Brand volume distribution analysis (2.8M tweets)
+│   └── cache.sqlite                   # Deterministic LLM response cache
+├── golden_set/
+│   ├── golden_eval_set.json           # 162 hand-curated & verified evaluation examples
+│   └── sampling_note.md               # Stratified sampling & annotation methodology
+├── models/
+│   └── bge-small/                     # Local ONNX runtime BAAI/bge-small-en-v1.5 model
+├── report/
+│   ├── decision_log.md                # 13 non-obvious engineering decisions & trade-offs
+│   └── report.md                      # Comprehensive technical report (6-page limit)
+├── scripts/                           # Exploratory data analysis & brand selection
+│   ├── analyze_brand_candidates.py    # Multi-criteria scoring across top candidate brands
+│   ├── analyze_apple_support.py       # Deep-dive analysis of AppleSupport conversational data
+│   ├── analyze_banking77.py           # Exploration of Banking77 intent taxonomy
+│   ├── analyze_kaggle_dataset.py      # Preliminary inspection of twcs.csv
+│   └── analyze_twcs_deep.py           # Volume, thread-depth, and response time metrics
+├── src/                               # Core agent source code
+│   ├── classify/                      # Intent classification models
+│   │   ├── baselines.py               # Baseline A (Majority) & Baseline B (TF-IDF + LogReg)
+│   │   └── llm_classifier.py          # Few-shot LLM classifier with prompt caching
+│   ├── draft/                         # Precedent-grounded reply generation
+│   │   └── rag_drafter.py             # Cosine similarity retrieval (k=3) + grounded drafter
+│   ├── escalate/                      # Human handoff & safety triggers
+│   │   ├── rules.py                   # Deterministic regex patterns (legal, abuse, account takeover)
+│   │   └── engine.py                  # Hybrid escalation engine with structured rationale
+│   ├── eval/                          # Evaluation harness & rubric assessment
+│   │   ├── agreement.py               # Human-vs-Judge correlation & Cohen's kappa metrics
+│   │   ├── harness.py                 # Master reproducible evaluation runner
+│   │   ├── judge.py                   # LLM-as-Judge rubric evaluator (4 dimensions)
+│   │   └── metrics.py                 # Classification, escalation, and tone scoring
+│   ├── pipeline/                      # Orchestration & data preparation
+│   │   ├── agent.py                   # Unified AppleSupportAgent end-to-end interface
+│   │   ├── kb_builder.py              # Resolution KB extraction using proxy heuristics
+│   │   └── reconstruct.py             # Temporal thread reconstruction & 80/20 partitioner
+│   ├── taxonomy/                      # Intent discovery & dataset curation
+│   │   ├── cluster.py                 # Unsupervised BGE embedding + K-Means silhouette sweeps
+│   │   ├── curate_golden_set.py       # Stratified sampling from held-out evaluation pool
+│   │   ├── taxonomy_def.py            # 9-class empirical taxonomy definitions & exemplars
+│   │   └── verify_golden_cli.py       # Interactive CLI tool for manual review & relabeling
+│   └── utils/                         # Shared utilities & model clients
+│       ├── embeddings.py              # Zero-dependency ONNX runtime embedding generator
+│       └── llm_client.py              # Multi-provider client (LM Studio + OpenRouter + Cache)
+├── .env.example                       # Environment variable configuration template
+├── PRD.md                             # Product Requirements Document
+├── requirements.txt                   # Python dependencies
+└── README.md                          # Project documentation & quickstart guide
 ```
-/data/
-  twcs_top_brands.json             # Kaggle 2.8M tweet distribution analysis
-  candidate_brands_analysis.json   # Comparative metrics (Apple vs Spotify vs Amazon vs Uber)
-  banking77/                       # Secondary dataset (train.csv, test.csv, categories.json)
-  processed/
-    apple_threads.jsonl            # 106,625 reconstructed conversation chains
-    historical_kb.jsonl            # 80% chronological split (KB & baseline training)
-    eval_pool.jsonl                # 20% held-out chronological slice (leakage-free)
-    resolution_kb.json             # 1,500 resolved cases indexed by intent
-    resolution_kb_vectors.npy      # Pre-computed 384-d dense BGE embeddings
-/src/
-  pipeline/
-    reconstruct.py                 # Thread reconstruction & temporal partitioner
-    kb_builder.py                  # Resolution KB builder using proxy heuristic
-    agent.py                       # Unified AppleSupportAgent pipeline
-  taxonomy/
-    cluster.py                     # Unsupervised BGE embedding + K-Means silhouette sweep
-    taxonomy_def.py                # 9-class empirical taxonomy definitions & exemplars
-    curate_golden_set.py           # Stratified sampling from held-out slice
-    verify_golden_cli.py           # Interactive CLI verification tool
-  classify/
-    baselines.py                   # Baseline A (Majority) & Baseline B (TF-IDF + LogReg)
-    llm_classifier.py              # Few-shot LLM classifier with prompt caching
-  draft/
-    rag_drafter.py                 # Dense cosine retrieval (k=3) + grounded reply drafter
-  escalate/
-    rules.py                       # Deterministic regex rules (legal, theft, harassment)
-    engine.py                      # Hybrid escalation engine with stated reasoning
-  eval/
-    metrics.py                     # Classification & escalation score calculators
-    judge.py                       # LLM-as-Judge with independent model (4 dimensions)
-    agreement.py                   # Pearson correlation & Cohen's kappa calculator
-    harness.py                     # Master evaluation harness
-  utils/
-    embeddings.py                  # Local ONNX runtime BGE embedding generator
-    llm_client.py                  # Unified client (LM Studio primary + OpenRouter fallback/judge + SQLite cache)
-/golden_set/
-  golden_eval_set.json             # 162 hand-curated & verified evaluation examples
-  sampling_note.md                 # Documentation on sampling & labeling methodology
-/report/
-  report.md                        # Max 6-page comprehensive technical report
-  decision_log.md                  # 13 non-obvious engineering decisions & trade-offs
-README.md                          # Quickstart & reproduction guide
-```
+
+### Module Responsibilities
+
+| Subsystem | Primary Path | Description & Role |
+| :--- | :--- | :--- |
+| **Data & Splits** | [`data/processed/`](data/processed/) | Leakage-free chronological partitions (80% historical KB / 20% held-out test), 1,500-entry resolution KB, and pre-indexed 384-d dense embeddings. |
+| **Golden Evaluation Set** | [`golden_set/`](golden_set/) | 162 human-verified test conversations stratified across all 9 taxonomy classes with ground-truth intent, escalation tags, and human quality scores. |
+| **Local Models & Cache** | [`models/`](models/), `data/cache.sqlite` | Offline ONNX runtime for BGE-small embeddings and persistent SQLite cache ensuring fast, deterministic LLM evaluation. |
+| **Exploratory Scripts** | [`scripts/`](scripts/) | Quantitative analysis tools for brand selection, Twitter CS volume metrics, and candidate evaluation. |
+| **Classification Engine** | [`src/classify/`](src/classify/) | 9-class intent classification comparing Majority (Baseline A), TF-IDF + Logistic Regression (Baseline B), and Few-Shot LLM prompting. |
+| **Grounding & RAG Drafter** | [`src/draft/`](src/draft/) | Cosine-similarity retrieval over precedent resolutions ($k=3$) to synthesize grounded, brand-aligned AppleSupport responses. |
+| **Escalation Engine** | [`src/escalate/`](src/escalate/) | Two-tier escalation engine combining fast deterministic safety rules with LLM sentiment & complexity analysis and explicit reasoning. |
+| **Evaluation Harness** | [`src/eval/`](src/eval/) | End-to-end benchmark harness, multi-criteria LLM-as-Judge rubric, and statistical human-judge correlation validation. |
+| **Pipeline & Orchestration**| [`src/pipeline/`](src/pipeline/) | End-to-end `AppleSupportAgent` facade, conversation thread reconstruction, and resolution KB compilation. |
+| **Taxonomy & Curation** | [`src/taxonomy/`](src/taxonomy/) | Unsupervised K-Means clustering, silhouette optimization, taxonomy definition, and interactive curation CLI. |
+| **Technical Reports** | [`report/`](report/) | Executive technical report (`report.md`) and comprehensive decision log (`decision_log.md`) documenting 13 architectural trade-offs. |
 
 ---
 
-## 🎯 Deliverables Mapping
+## Deliverables Mapping
 
 | Required Deliverable | Repository File / Artifact |
 | :--- | :--- |
@@ -150,7 +185,7 @@ README.md                          # Quickstart & reproduction guide
 
 ---
 
-## 🧪 Interactive Single Query Demo
+## Interactive Single Query Demo
 
 You can interactively test the agent on any custom customer tweet:
 ```bash
