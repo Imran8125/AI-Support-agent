@@ -38,9 +38,11 @@ This log documents the 13 non-obvious engineering decisions made during the arch
 
 ---
 
-### Decision 6: Dual LLM Provider Support with Local Apple Silicon Fallback
-- **Decision:** Built the `LLMClient` to support both local LM Studio (`google/gemma-4-e4b` on Apple Silicon) and OpenRouter free-tier rotation with unified schema and automatic fallbacks.
-- **Rationale:** OpenRouter `:free` models rotate weekly and enforce ~20 req/min caps. Supporting local LM Studio provides zero-cost, unlimited-rate offline development capability on the developer's 16GB M5 Mac.
+### Decision 6: Primary Local LM Studio (Gemma 4B) Inference with Cloud OpenRouter Fallback & Judge Routing
+- **Decision:** Built `LLMClient` with a primary local inference runtime (`google/gemma-4-e4b` via LM Studio on Apple Silicon) and OpenRouter free-tier API as an automated cloud fallback and dedicated host for the independent LLM-as-Judge (`nvidia/nemotron-3-super-120b-a12b:free`), coordinated via `LLM_PROVIDER=auto` (with explicit manual `lmstudio` / `openrouter` overrides) in `.env`.
+- **Rationale:** 
+  - **The Dev-Iteration Rate Limit Bottleneck:** The initial architecture was conceived entirely on OpenRouter free models, but strict rate limits (~20 req/min with frequent HTTP 429 throttling and exponential backoffs) made running a multi-stage agent pipeline (intent classification + RAG drafting + escalation reasoning) across hundreds of queries impractical at development iteration speed.
+  - **Decoupled Workloads:** Pivoting to local LM Studio inference on Apple Silicon provided zero-cost, zero-latency, rate-limit-free execution for high-volume agent calls. Meanwhile, OpenRouter was strategically reserved for the independent LLM-as-Judge (`nvidia/nemotron-3-super-120b-a12b:free`), where independence from the drafting model (to strictly eliminate self-preference bias, PRD §2.1 & §4.7) matters far more than call volume.
 
 ---
 
@@ -80,10 +82,11 @@ This log documents the 13 non-obvious engineering decisions made during the arch
 
 ---
 
-### Decision 13: Subsampling 36 Examples (22.2%) from the 162-Item Golden Set for Headline Evaluation
-- **Decision:** While 162 held-out customer interactions were hand-curated and ground-truth verified (18 per intent class across 9 categories in `golden_set/golden_eval_set.json`), headline evaluation was executed on a balanced 36-query subsample (exactly 4 per class, 22.2% of the golden set).
+### Decision 13: Transition from Rapid N=36 Prototyping Subsample to Full N=162 Golden Evaluation via Local GPU Acceleration
+- **Decision:** While initial development utilized a balanced 36-query subsample (4/class, 22.2%) to navigate free-tier cloud rate limits during rapid iteration, all definitive headline benchmark metrics were promoted to the complete 162-item golden evaluation set (18 per class across all 9 taxonomy intents) executed locally via Apple Silicon Metal acceleration (`google/gemma-4-e4b` in LM Studio).
 - **Rationale:** 
-  - **Rate-limit quotas and latency on free LLM endpoints:** Evaluating all 162 examples through the full multi-stage agent pipeline (intent classification, dense embedding retrieval, RAG tweet drafting, and independent LLM-as-judge rubric scoring) requires ~486 LLM calls. Under OpenRouter free-tier rate limits (~20 requests/minute with frequent HTTP 429 throttling and exponential backoffs), running 162 queries requires ~35–45 minutes and routinely fails mid-run due to provider timeouts. Subsampling to 36 queries completes deterministically in <3 minutes (or <5 seconds with SQLite cache hits).
-  - **Preserving stratified class balance:** Rather than evaluating an unstratified random subset, 36 was chosen because it allows exactly 4 examples per category across all 9 taxonomy intents ($9 \times 4 = 36$). This guarantees identical statistical weight for critical, low-frequency categories (`theft_lost_legal` accounts for 4 of 36 queries, 11.1%), preventing rare safety escalations from being washed out by high-volume chatter.
-  - **Decoupling curation from rapid benchmark execution:** Curation rigor (PRD §3 requirement for 150–250 golden examples) was met by labeling and verifying the complete 162-item dataset in `golden_set/golden_eval_set.json`. The master harness (`src/eval/harness.py`) provides the `--limit 162` flag for unconstrained evaluation runs.
+  - **Eliminating statistical sampling variance:** At $N=36$ across 9 classes (4 per class), a single misclassified query swayed accuracy by 2.78 percentage points, creating metric variance that obscured subtle model differences. Evaluating across the complete 162-item golden set provides a statistically robust, defensible foundation where each category has 18 verified ground-truth data points.
+  - **Overcoming cloud rate limits with local hardware:** Executing all 162 queries through classification, retrieval, drafting, and escalation would have taken ~35–45 minutes on rate-limited free cloud endpoints due to rolling 20 req/min caps and exponential retry backoffs. Bringing up local LM Studio on Apple Silicon unified memory with Metal acceleration and multi-worker parallelism allowed the full 162-item evaluation (alongside $N=35$ judge evaluations) to execute deterministically without rate-limiting, network timeouts, or API costs.
+  - **Transparent per-class reporting:** On the full 162-item set, we report raw counts (e.g., `11/18 correct` on `theft_lost_legal`) alongside percentages, preventing overstated precision on rare categories and proving that the LLM achieved 100% precision (11 TP, 0 FP, 7 FN) on safety-critical threats where TF-IDF scored 0/18 (0.0% recall).
+
 

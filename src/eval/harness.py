@@ -276,7 +276,7 @@ def run_evaluation_harness(eval_limit: int = 162, judge_sample: int = 35):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser(description="AppleSupport AI Agent Benchmark Harness")
-    parser.add_argument("--limit", type=int, default=162, help="Number of evaluation queries (default 162 for full golden set)")
+    parser.add_argument("--limit", type=int, default=162, help="Number of evaluation queries (default 162 for full golden set; use 36 for rapid subsample)")
     parser.add_argument("--judge-sample", type=int, default=35, help="Number of replies to score with LLM judge (default 35, matching hand-scored spotcheck)")
     args = parser.parse_args()
     

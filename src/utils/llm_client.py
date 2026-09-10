@@ -103,7 +103,10 @@ class LLMClient:
         # Decide target provider and model
         chosen_provider = self.provider
         if chosen_provider == "auto":
-            if self._check_lm_studio_alive():
+            # For judge evaluations, prefer OpenRouter if key is available to ensure independent model family
+            if is_judge and self.openrouter_api_key:
+                chosen_provider = "openrouter"
+            elif self._check_lm_studio_alive():
                 chosen_provider = "lmstudio"
             elif self.openrouter_api_key:
                 chosen_provider = "openrouter"
@@ -131,15 +134,30 @@ class LLMClient:
 
         # Perform actual call
         if chosen_provider == "lmstudio":
-            res = self._call_openai_compatible(
-                base_url=self.lm_studio_base_url,
-                api_key="not-needed",
-                model=target_model,
-                system_prompt=system_prompt,
-                prompt=prompt,
-                temperature=temperature,
-                max_tokens=max_tokens
-            )
+            try:
+                res = self._call_openai_compatible(
+                    base_url=self.lm_studio_base_url,
+                    api_key="not-needed",
+                    model=target_model,
+                    system_prompt=system_prompt,
+                    prompt=prompt,
+                    temperature=temperature,
+                    max_tokens=max_tokens
+                )
+            except Exception as lm_err:
+                if self.provider == "auto" and self.openrouter_api_key:
+                    print(f"LM Studio call failed ({lm_err}). Automatically falling back to OpenRouter...")
+                    chosen_provider = "openrouter"
+                    target_model = self.judge_model if is_judge else self.openrouter_models[self.model_rotation_idx % len(self.openrouter_models)]
+                    res = self._call_openrouter(
+                        model=target_model,
+                        system_prompt=system_prompt,
+                        prompt=prompt,
+                        temperature=temperature,
+                        max_tokens=max_tokens
+                    )
+                else:
+                    raise
         else:
             if not self.openrouter_api_key:
                 raise ValueError(
@@ -194,6 +212,10 @@ class LLMClient:
             "Content-Type": "application/json"
         }
 
+        # Ensure reasoning models have enough headroom for thinking tokens + JSON completion
+        is_judge_eval = "groundedness" in prompt.lower() or "rubric" in prompt.lower() or "judge" in system_prompt.lower()
+        effective_max_tokens = max(max_tokens, 1200 if is_judge_eval else max_tokens)
+
         payload = {
             "model": model,
             "messages": [
@@ -201,7 +223,7 @@ class LLMClient:
                 {"role": "user", "content": prompt}
             ],
             "temperature": temperature,
-            "max_tokens": max_tokens
+            "max_tokens": effective_max_tokens
         }
 
         # Handle rate limits with resilient retries

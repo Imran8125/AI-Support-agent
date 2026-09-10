@@ -51,9 +51,10 @@ Each record in `golden_set/golden_eval_set.json` contains:
 
 ---
 
-### 4. Golden Set Size vs. Headline Benchmark Slice (162 vs. 36 items)
+### 4. Golden Set Size & Comprehensive Evaluation Coverage (N = 162)
 
-- **Full Golden Evaluation Set ($N=162$):** 162 hand-curated and ground-truth verified records (18 per class across all 9 taxonomy categories) stored in `golden_set/golden_eval_set.json`.
-- **Headline Benchmark Subsample ($N=36$):** Due to rate-limit quotas (~20 req/min) and latency on free LLM endpoints (~486 sequential LLM calls across classification, RAG reply drafting, and independent LLM-as-judge rubric scoring), headline evaluation metrics reported in `report/report.md` were executed on a balanced 36-query subsample (exactly 4 per class across all 9 taxonomy intents, representing exactly 22.2% of the golden set).
-- **Execution via CLI:** The master evaluation harness (`src/eval/harness.py`) defaults to this 36-item slice for rapid reproduction (<3 minutes), but natively supports evaluating the complete 162-item set via `python -m src.eval.harness --limit 162`.
+- **Complete Golden Evaluation Set ($N=162$):** 162 hand-curated and ground-truth verified records (exactly 18 per class across all 9 taxonomy categories) stored in `golden_set/golden_eval_set.json`.
+- **Definitive Headline Benchmark Execution:** All reported headline evaluation metrics in `report/report.md` are executed across the complete 162-item set (100% of the golden set), eliminating small-sample variance. Execution is accelerated locally via Apple Silicon Metal acceleration on `google/gemma-4-e4b` in LM Studio, bypassing cloud rate limits.
+- **Execution via CLI:** The master evaluation harness (`src/eval/harness.py`) defaults to evaluating all 162 items via `python -m src.eval.harness --limit 162 --judge-sample 35`.
+
 

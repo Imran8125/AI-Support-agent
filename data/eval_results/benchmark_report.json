@@ -1,6 +1,6 @@
 {
   "dataset": "AppleSupport (TWCS Held-out Split)",
-  "golden_set_size": 36,
+  "golden_set_size": 162,
   "classification_comparison": {
     "baseline_a": {
       "name": "Majority Class",
@@ -9,84 +9,235 @@
     },
     "baseline_b": {
       "name": "TF-IDF + LogReg",
-      "accuracy": 0.6944,
-      "macro_f1": 0.6912
+      "accuracy": 0.6296,
+      "macro_f1": 0.6371
     },
     "system_llm": {
       "name": "AppleSupport AI Agent",
-      "accuracy": 0.6111,
-      "macro_f1": 0.6008
+      "accuracy": 0.5617,
+      "macro_f1": 0.5585
+    }
+  },
+  "per_class_classification_breakdown": {
+    "account_icloud_security": {
+      "tp": 12,
+      "fp": 4,
+      "fn": 6,
+      "support": 18,
+      "raw_correct": "12/18",
+      "precision": 0.75,
+      "recall": 0.6667,
+      "f1": 0.7059
+    },
+    "apps_services_media": {
+      "tp": 7,
+      "fp": 6,
+      "fn": 11,
+      "support": 18,
+      "raw_correct": "7/18",
+      "precision": 0.5385,
+      "recall": 0.3889,
+      "f1": 0.4516
+    },
+    "battery_power_issue": {
+      "tp": 16,
+      "fp": 15,
+      "fn": 2,
+      "support": 18,
+      "raw_correct": "16/18",
+      "precision": 0.5161,
+      "recall": 0.8889,
+      "f1": 0.6531
+    },
+    "connectivity_network": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 10,
+      "support": 18,
+      "raw_correct": "8/18",
+      "precision": 1.0,
+      "recall": 0.4444,
+      "f1": 0.6154
+    },
+    "hardware_screen_audio": {
+      "tp": 4,
+      "fp": 2,
+      "fn": 14,
+      "support": 18,
+      "raw_correct": "4/18",
+      "precision": 0.6667,
+      "recall": 0.2222,
+      "f1": 0.3333
+    },
+    "orders_repairs_store": {
+      "tp": 13,
+      "fp": 5,
+      "fn": 5,
+      "support": 18,
+      "raw_correct": "13/18",
+      "precision": 0.7222,
+      "recall": 0.7222,
+      "f1": 0.7222
+    },
+    "os_software_glitch": {
+      "tp": 15,
+      "fp": 26,
+      "fn": 3,
+      "support": 18,
+      "raw_correct": "15/18",
+      "precision": 0.3659,
+      "recall": 0.8333,
+      "f1": 0.5085
+    },
+    "other_unclear": {
+      "tp": 5,
+      "fp": 13,
+      "fn": 13,
+      "support": 18,
+      "raw_correct": "5/18",
+      "precision": 0.2778,
+      "recall": 0.2778,
+      "f1": 0.2778
+    },
+    "theft_lost_legal": {
+      "tp": 11,
+      "fp": 0,
+      "fn": 7,
+      "support": 18,
+      "raw_correct": "11/18",
+      "precision": 1.0,
+      "recall": 0.6111,
+      "f1": 0.7586
+    }
+  },
+  "tfidf_per_class_counts": {
+    "account_icloud_security": {
+      "tp": 15,
+      "fp": 2,
+      "fn": 3,
+      "support": 18,
+      "raw_correct": "15/18",
+      "precision": 0.8824,
+      "recall": 0.8333,
+      "f1": 0.8571
+    },
+    "apps_services_media": {
+      "tp": 11,
+      "fp": 3,
+      "fn": 7,
+      "support": 18,
+      "raw_correct": "11/18",
+      "precision": 0.7857,
+      "recall": 0.6111,
+      "f1": 0.6875
+    },
+    "battery_power_issue": {
+      "tp": 12,
+      "fp": 0,
+      "fn": 6,
+      "support": 18,
+      "raw_correct": "12/18",
+      "precision": 1.0,
+      "recall": 0.6667,
+      "f1": 0.8
+    },
+    "connectivity_network": {
+      "tp": 10,
+      "fp": 3,
+      "fn": 8,
+      "support": 18,
+      "raw_correct": "10/18",
+      "precision": 0.7692,
+      "recall": 0.5556,
+      "f1": 0.6452
+    },
+    "hardware_screen_audio": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 5,
+      "support": 18,
+      "raw_correct": "13/18",
+      "precision": 0.8667,
+      "recall": 0.7222,
+      "f1": 0.7879
+    },
+    "orders_repairs_store": {
+      "tp": 11,
+      "fp": 0,
+      "fn": 7,
+      "support": 18,
+      "raw_correct": "11/18",
+      "precision": 1.0,
+      "recall": 0.6111,
+      "f1": 0.7586
+    },
+    "os_software_glitch": {
+      "tp": 13,
+      "fp": 2,
+      "fn": 5,
+      "support": 18,
+      "raw_correct": "13/18",
+      "precision": 0.8667,
+      "recall": 0.7222,
+      "f1": 0.7879
+    },
+    "other_unclear": {
+      "tp": 17,
+      "fp": 48,
+      "fn": 1,
+      "support": 18,
+      "raw_correct": "17/18",
+      "precision": 0.2615,
+      "recall": 0.9444,
+      "f1": 0.4096
+    },
+    "theft_lost_legal": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 18,
+      "support": 18,
+      "raw_correct": "0/18",
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0
     }
   },
   "escalation_metrics": {
-    "accuracy": 0.5833,
-    "precision": 0.2105,
+    "accuracy": 0.5185,
+    "precision": 0.2121,
     "recall": 1.0,
-    "f1": 0.3478
+    "f1": 0.35
   },
   "reply_quality_judge": {
-    "num_judged": 15,
+    "num_judged": 35,
     "rubric_averages": {
-      "groundedness": 4.87,
-      "correctness": 4.67,
-      "tone_match": 4.93,
+      "groundedness": 4.77,
+      "correctness": 4.66,
+      "tone_match": 4.86,
       "resolution_likelihood": 4.6
     },
-    "overall_mean": 4.77
+    "overall_mean": 4.72
   },
   "human_judge_agreement": {
-    "sample_size": 14,
-    "pearson_r": 0.8219,
-    "pearson_p_value": 0.0003105480026628389,
-    "spearman_rho": 0.6803,
-    "quadratic_weighted_cohen_kappa": 0.1954,
-    "mean_absolute_error": 0.5893,
-    "human_mean": 4.18,
-    "judge_mean": 4.77
+    "sample_size": 35,
+    "pearson_r": 0.4505,
+    "pearson_p_value": 0.006613164035961526,
+    "spearman_rho": 0.2634,
+    "quadratic_weighted_cohen_kappa": 0.1053,
+    "mean_absolute_error": 0.6714,
+    "human_mean": 4.12,
+    "judge_mean": 4.72
   },
   "top_failure_cases": [
     {
-      "eval_id": 2,
-      "text": "Somebody hacked my Apple account and @115858 ain\u2019t doing nothing to fix it.",
-      "true_intent": "account_icloud_security",
-      "pred_intent": "account_icloud_security",
+      "eval_id": 4,
+      "text": "@116333 @AppleSupport @115858 AGAIN can you please tell me why the hell the new update has changed the spelling of the I\u2019s ? This is my third time calling apple and tweeting and they said the new update would be sent to my phone! I\ufe0f didn\u2019t spend 1000 on this phone to look like",
+      "true_intent": "os_software_glitch",
+      "pred_intent": "os_software_glitch",
       "true_escalate": false,
       "pred_escalate": true,
-      "escalation_reason": "The inquiry involves a critical account security breach (hacking), which requires immediate, personalized verification and recovery steps only a human specialist can provide.",
-      "draft_reply": "@customer We want to help you regain control of your account. Please provide us with more details regarding the security issue via DM here: [Link/Instruction]",
-      "failure_type": "Escalation Mismatch"
-    },
-    {
-      "eval_id": 21,
-      "text": "\u0130cloud'da yedekledi\u011fimiz fotolar\u0131 bilgisayara nas\u0131l al\u0131yoruz? @AppleSupport",
-      "true_intent": "account_icloud_security",
-      "pred_intent": "apps_services_media",
-      "true_escalate": false,
-      "pred_escalate": false,
-      "escalation_reason": "The inquiry is a common procedural 'how-to' question regarding iCloud photo synchronization and download, which can be fully addressed by the AI assistant.",
-      "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The user wants to know how to download photos backed up in iCloud onto a computer (PC).\n    *   *Original message:* \"\u0130cloud'da yedekledi\u011fimiz fotolar\u0131 bilgisayara nas\u0131l al\u0131yoruz? @AppleSupport\" (How do we get the photos backed up in iCloud onto the computer?)\n    *   *Intent:* apps_services_media (iCloud Photos/Download).\n\n2.  **Analyze the Constraints & Persona:**\n    *   Role: Official Apple Support Agent (@AppleSupport).\n    *   Tone: Polite, empathetic, concise, technically accurate.\n    *   Format: Twitter reply (under 240 characters).\n    *   Crucial Rule: Ground response strictly in provided precedents. Do not invent details/links.\n\n3.  **Analyze the Precedents:**\n    *   [P1] (iCloud Photos issue, directs to specialized team/link).\n    *   [P2] (Language barrier, directs to specific language support links).\n    *   [P3] (Downloading issue/pain point, directs to DM for more info/specific link).\n\n4.  **Determine the Best Course of Action:**\n    *   The user is asking a technical \"how-to\" question (downloading photos).\n    *   Precedents P1 and P3 handle technical issues related to iCloud/downloading by moving the conversation off Twitter or directing them to a specific support flow.\n    *   Since this is a technical process question that might require troubleshooting steps (like using the iCloud website, syncing via Photos app, etc.), the most appropriate action, mirroring P3 (which deals with downloading pain points), is to gather more information or move the conversation into a private channel (DM).\n\n5.  **Drafting - Attempt 1 (Focus on moving the conversation):**\n    *   *Goal:* Acknowledge the request and ask for more details to provide accurate instructions.\n    *   *Draft:* We'd like to help you download your photos! To give you the best instructions, please DM us and we'll guide you through the process. Thanks! [Link/Handle] (This mirrors P3 structure).\n\n6.  **Refining and Applying Tone/Constraints:**\n    *   The question is simple (\"How do I download?\"). A direct \"DM us\" might seem abrupt. However, given the precedents push complex issues to DM, this is the safest approach if a simple link isn't available.\n    *   Let's use the structure of P3, as it deals with the \"downloading\" pain point.\n\n7.  **Final Polish (Concise, Empathetic, Actionable):**\n    *   Acknowledge the task. Offer help. Direct",
-      "failure_type": "Intent Misclassification"
-    },
-    {
-      "eval_id": 28,
-      "text": "@AppleSupport Please, this alert doesn\u2019t tell me what I\u2019m giving my password to or what for and it bothers me constantly. How am I supposed to know some third party app isn\u2019t trying to scam me? https://t.co/qm5kVavhqt",
-      "true_intent": "account_icloud_security",
-      "pred_intent": "account_icloud_security",
-      "true_escalate": false,
-      "pred_escalate": true,
-      "escalation_reason": "Deterministic trigger: High-hostility sentiment or accusation of fraud/scam warrants human review.",
-      "draft_reply": "@customer We understand your concern about security alerts. If you are unsure if a prompt or alert is legitimate, please check out our official guides on identifying and reporting suspicious activity for your peace of mind. [Link to security resource]",
-      "failure_type": "Escalation Mismatch"
-    },
-    {
-      "eval_id": 34,
-      "text": "How tf am I randomly gonna get signed out of my iCloud and then when I type in the correct info it doesn\u2019t sign me in \ud83d\ude11 @AppleSupport",
-      "true_intent": "account_icloud_security",
-      "pred_intent": "account_icloud_security",
-      "true_escalate": false,
-      "pred_escalate": true,
-      "escalation_reason": "The issue involves account security and sign-in failure, which often requires personalized troubleshooting or verification beyond the scope of automated support.",
-      "draft_reply": "@customer We're here to help with any issues you may be having regarding your sign-in trouble. Please join us in a DM so we can look into this for you. https://t.co/GDrqU22YpT",
+      "escalation_reason": "The customer is expressing deep frustration due to multiple failed support attempts and requires human intervention for de-escalation and personalized resolution regarding the software bug.",
+      "draft_reply": "We understand how frustrating this must be. It sounds like you've encountered a software glitch with the new update. \ud83d\ude14\n\nPlease DM us and tell us the exact version of iOS you're running so we can look into this for you. \ud83c\udf4e",
       "failure_type": "Escalation Mismatch"
     },
     {
@@ -101,26 +252,15 @@
       "failure_type": "Intent Misclassification"
     },
     {
-      "eval_id": 16,
-      "text": "Hi @AppleSupport i'm having problems (again) with your ever-bugging iTunes software. plz help",
-      "true_intent": "apps_services_media",
-      "pred_intent": "os_software_glitch",
-      "true_escalate": false,
-      "pred_escalate": false,
-      "escalation_reason": "The inquiry describes a common software glitch with iTunes, which can likely be addressed using initial diagnostic steps available in the knowledge base.",
-      "draft_reply": "We understand this is frustrating. We want to help you with iTunes! Please DM us the details of the issue so we can look into it for you.",
-      "failure_type": "Intent Misclassification"
-    },
-    {
-      "eval_id": 27,
-      "text": "@AppleSupport I am disabled out of my iPhone and is telling me to connect to iTunes. I am receiving an error code of 0xE000015. Please help",
-      "true_intent": "apps_services_media",
-      "pred_intent": "os_software_glitch",
+      "eval_id": 6,
+      "text": "Dear @115858, I have an online order which I never received - who can I talk to?",
+      "true_intent": "orders_repairs_store",
+      "pred_intent": "orders_repairs_store",
       "true_escalate": false,
       "pred_escalate": true,
-      "escalation_reason": "The specific error code (0xE000015) indicates a critical recovery mode issue that requires guided, expert troubleshooting to prevent data loss or unsuccessful attempts.",
-      "draft_reply": "@customer We understand how frustrating this is. Since you're seeing an error code, please move to DM so we can look into this further and help you troubleshoot. https://t.co/GDrqU22YpT",
-      "failure_type": "Intent Misclassification"
+      "escalation_reason": "The inquiry concerns a missing physical order and requires account authentication to investigate shipping status, address details, or billing disputes.",
+      "draft_reply": "We understand your concern about your order. For questions regarding the status of your online purchase, please reach out to our Apple Online Store support team for assistance.",
+      "failure_type": "Escalation Mismatch"
     },
     {
       "eval_id": 9,
@@ -134,6 +274,39 @@
       "failure_type": "Escalation Mismatch"
     },
     {
+      "eval_id": 10,
+      "text": "Goddammit @115858 my upper case \u201ci\u201d has just disappeared again. It just came back with that release last week. Now what? This is beyond annoying",
+      "true_intent": "other_unclear",
+      "pred_intent": "os_software_glitch",
+      "true_escalate": false,
+      "pred_escalate": false,
+      "escalation_reason": "Standard inquiry eligible for auto-reply.",
+      "draft_reply": "We're sorry to hear you're running into this frustrating issue again. We're here to help look into why your uppercase 'i' is disappearing. Please DM us and we can go from there! \ud83d\udee0\ufe0f",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 11,
+      "text": "@AppleSupport want to send a note about amazing help received following theft of iPhone while on vacation. How to?",
+      "true_intent": "theft_lost_legal",
+      "pred_intent": "other_unclear",
+      "true_escalate": true,
+      "pred_escalate": true,
+      "escalation_reason": "Deterministic trigger: Stolen hardware or law enforcement involvement requires human specialist handling.",
+      "draft_reply": "We are so sorry to hear about your theft, but we're glad we could assist you during this difficult time. Your kind words mean a lot to our entire team! Thank you for reaching out. \u2764\ufe0f",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 12,
+      "text": "@AppleSupport Face ID doesn\u2019t work with sunglasses on..................................",
+      "true_intent": "other_unclear",
+      "pred_intent": "battery_power_issue",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
+      "draft_reply": "@customer We're here to help. Please reach out to us via DM and we'll get started, https://t.co/GDrqU22YpT",
+      "failure_type": "Intent Misclassification"
+    },
+    {
       "eval_id": 13,
       "text": "@116333 @115858 Mac shuts down when put in Sleep, High Sierra bricked Mac, AirPods DO NOT connect automatically, Mac Messages not deleted via cloud, Calculator defaults to 172, Root vulnerabilities. Is this the new Apple quality? Or, is it just about the $ and investors now?",
       "true_intent": "connectivity_network",
@@ -145,14 +318,25 @@
       "failure_type": "Intent Misclassification"
     },
     {
-      "eval_id": 38,
-      "text": "Disappointing service from @115858. Covent Garden \u201cgenius\u201d - rude, patronising and unhelpful. My location and WiFi can still not be found!",
-      "true_intent": "connectivity_network",
-      "pred_intent": "other_unclear",
+      "eval_id": 14,
+      "text": "on an iMac @AppleSupport when i move the mouse to the upper right of the screen why does everything disappear???",
+      "true_intent": "hardware_screen_audio",
+      "pred_intent": "os_software_glitch",
       "true_escalate": false,
       "pred_escalate": true,
       "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
-      "draft_reply": "@customer That\u2019s not the experience we want you to have. We\u2019d like to take a closer look at this with you. Meet us in DM to proceed. https://t.co/GDrqU22YpT",
+      "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The user has an iMac and observes that \"everything disappears\" when moving the mouse to the upper right corner of the screen. The intent is an `os_software_glitch`.\n2.  **Analyze the Constraints:**\n    *   Role: Official Apple Support Agent (@AppleSupport).\n    *   Tone: Polite, empathetic, concise, technically accurate.\n    *   Format: Tweet (under 240 characters).\n    *   Crucial Rule: Ground response *strictly* in provided precedents. Do not invent details (serial numbers, refunds, etc.).\n3.  **Analyze the Precedents:**\n    *   [Precedent 1 (0.72)]: iMac, mouse issue -> DM for detailed look.\n    *   [Precedent 2 (0.71)]: iMac, monitor/mouse issue after OS install -> Provided troubleshooting article link.\n    *   [Precedent 3 (0.67)]: Apps disappearing/reappearing -> Suggested App Store updates and specific iOS version update (11.1.1) + backup link.\n4.  **Determine the Best Fit/Action:** The user's issue (\"everything disappears\" when moving mouse to upper right) is a classic display/OS boundary issue, similar in scope to the issues described in Precedent 2 (monitor/mouse movement after OS change) or potentially a display setting issue.\n5.  **Select the Strategy:** Since the description is vague (\"everything disappears\"), the most helpful and safest approach, mirroring Precedent 1 (which handles specific hardware/software issues needing deeper investigation) or Precedent 2 (providing a troubleshooting resource), is needed. Given the ambiguity, starting with gathering more information or directing them to resources is safest.\n6.  **Drafting - Attempt 1 (Focus on gathering info, like Precedent 1):**\n    *   *Draft:* We understand this must be frustrating. Could you tell us the specific model of your iMac? DM us, and we can look into this disappearing screen issue together.\n    *   *(Check constraints: Polite, concise, accurate. Fits the spirit of Precedent 1.)*\n7.  **Refining and Selecting (Matching the most likely successful pattern):** Precedent 1 is the cleanest match for an initial, specific hardware/software glitch report.\n\n8.  **Final Polish (Tweet format):** Ensure it is empathetic and directs the next step clearly.\n\n*(Self-Correction: While Precedent 2 provides a link, the current issue might not be related to an OS update causing the glitch. Precedent 1 is a safer initial response for a vague, critical bug report.)*\n\n9.  **Final Output Generation.** (Using the structure of Precedent 1 for maximum safety and adherence to",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 16,
+      "text": "Hi @AppleSupport i'm having problems (again) with your ever-bugging iTunes software. plz help",
+      "true_intent": "apps_services_media",
+      "pred_intent": "os_software_glitch",
+      "true_escalate": false,
+      "pred_escalate": false,
+      "escalation_reason": "The inquiry describes a common software glitch with iTunes, which can likely be addressed using initial diagnostic steps available in the knowledge base.",
+      "draft_reply": "We understand this is frustrating. We want to help you with iTunes! Please DM us the details of the issue so we can look into it for you.",
       "failure_type": "Intent Misclassification"
     }
   ]
