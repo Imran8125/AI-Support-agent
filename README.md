@@ -150,7 +150,6 @@ ai-support-agent/
 │       ├── embeddings.py              # Zero-dependency ONNX runtime embedding generator
 │       └── llm_client.py              # Multi-provider client (LM Studio + OpenRouter + Cache)
 ├── .env.example                       # Environment variable configuration template
-├── PRD.md                             # Product Requirements Document
 ├── requirements.txt                   # Python dependencies
 └── README.md                          # Project documentation & quickstart guide
 ```
