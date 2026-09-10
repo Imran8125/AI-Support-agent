@@ -1,0 +1,207 @@
+{
+  "sweep_results": {
+    "6": 0.030430695042014122,
+    "7": 0.026563037186861038,
+    "8": 0.027478782460093498,
+    "9": 0.030275121331214905,
+    "10": 0.03078211471438408,
+    "11": 0.03003489226102829,
+    "12": 0.030997605994343758
+  },
+  "best_k": 12,
+  "final_k": 8,
+  "clusters": [
+    {
+      "cluster_id": 0,
+      "size": 229,
+      "pct": 11.5,
+      "keywords": [
+        "fix",
+        "letter",
+        "type",
+        "question",
+        "why",
+        "mark",
+        "when"
+      ],
+      "representative_examples": [
+        "@115858 your newest update glitch of replacing the \u201cI\ufe0f\u201d with \u201cA?  \u201c Is making me mad \ud83d\ude20",
+        "@81356 @115858 Haha so annoying. I did that but it\u2019s starting to do it to all my letters and not just the \u201cI\u201d now.. oh well. I\u2019m sure they\u2019re looking to fix it ASAP. Thanks buddy \ud83d\ude0a",
+        "@AppleSupport this glitch when we type \u201cI\u201d and turns into this \u201cI\ufe0f\u201d \u2014 can y\u2019all fix that?",
+        "Hey @115858 fix the damn \u201cI\u201d button",
+        "@115858 why is it that every time I\ufe0f type \u201cI\ufe0f\u201d it\u2019s replaced with and A and a boxed question mark. SO ANNOYING",
+        "This @115858 glitch where every time i type an uppercase \u201ci\u201d &amp; changes to \u201c I\ufe0f \u201c is getting on my nerves. Anyone know how to fix it?",
+        "Is anyone else\u2019s iPhone fucking up when you type the letter \u201ci\u201d and instead it gives you I\ufe0f ?\n@AppleSupport @115858",
+        "11.1 giving me some weirdness if I\ufe0f type the letter \u201cI\ufe0f\u201d. Fix it please @AppleSupport"
+      ]
+    },
+    {
+      "cluster_id": 1,
+      "size": 283,
+      "pct": 14.1,
+      "keywords": [
+        "apple",
+        "why",
+        "music",
+        "help",
+        "update",
+        "now",
+        "app"
+      ],
+      "representative_examples": [
+        "@AppleSupport why did all of my Apple Music library erase once I updated my 6S Plus to the newest software? Can you answer that for me? And when I try to re-add songs, I get this notification\ud83e\udd2c https://t.co/0LmQTnpqv5",
+        "@AppleSupport my apple music has been glitching recently, sometimes when i try to add music to playlists or download new songs it won\u2019t load https://t.co/ian4twB7wk",
+        "Why do I keep getting this every single \ud83e\udd2c time I try to use iTunes? I don\u2019t even live near London.  @115858 @AppleSupport @115948 https://t.co/dSDqEAQ1sZ",
+        "@115858 yall fucked up my music app with this update",
+        "Can either @115858 or @115948 send out an update for my Apple Music my app won't even load sometimes",
+        "@715999 @AppleSupport I\u2019m having the same issue. Also: my music and podcasts start/stop randomly. So annoying.",
+        "HELLO @115858 FIX THE MUSIC APP IN THE CONTROL CENTER SO IT CAN CONNECT TO SPOTIFY OR SOUNDCLOUD \ud83d\udde3",
+        "@AppleSupport Downloaded new iTunes onto laptop ... and now can\u2019t do backups of my Iphone or Ipods \ud83d\ude22 iTunes doesn\u2019t see them \ud83e\udd37\u200d\u2642\ufe0f"
+      ]
+    },
+    {
+      "cluster_id": 2,
+      "size": 61,
+      "pct": 3.0,
+      "keywords": [
+        "iphone",
+        "ios",
+        "que",
+        "con",
+        "niet",
+        "mon",
+        "por"
+      ],
+      "representative_examples": [
+        "Menuda santa mierda la \u00faltima actualizaci\u00f3n de IOS... que desastre.... no se puede ni usar el m\u00f3vil \ud83d\ude35\ud83d\ude14\ud83d\udd2a @AppleSupport @115858",
+        "@AppleSupport gracias a la actualizaci\u00f3n iOS mi m\u00f3vil ha quedado inservible. N llegan notificaciones,se bloquea solo y se funde la bater\u00eda.",
+        "iOS realmente est\u00e1n acabando con mi paciencia!!! iPhone desactivado al actualizar porqu\u00e9!!!!! \ud83d\ude21\ud83d\ude24@AppleSupport @115858",
+        "@AppleSupport eu quero minha bateria de volta! Esse IOS t\u00e1 drenando as for\u00e7as dela!!",
+        "Gracias #iOS11 por acabar con mi #ipod joder mi #iphone junto con @4305 y @22692 @AppleSupport p\u00f3nganse a trabajar",
+        "@AppleSupport @115858 recontra mal\u00edsima la ultima actualizaci\u00f3n! #ios1102 \ud83d\ude21",
+        "Man kann meinem Akku beim leerer werden regelrecht zugucken bei meinem #iPhone7 unter #ios11 \ud83d\ude2b Bitte um Abhilfe @AppleSupport",
+        "@115858 @AppleSupport @1204 a ver si arregl\u00e1is la actualizaci\u00f3n 11.0.3 y dej\u00e1is actualizar las apps ;)"
+      ]
+    },
+    {
+      "cluster_id": 3,
+      "size": 290,
+      "pct": 14.5,
+      "keywords": [
+        "fix",
+        "shit",
+        "your",
+        "glitch",
+        "get",
+        "going",
+        "please"
+      ],
+      "representative_examples": [
+        "@115858 so are ya going to fix this problem \u201cI\ufe0f\u201d",
+        "I\ufe0f  &lt;\u2014 Fix this bullshit right now @115858",
+        "Can you fucking fix this already \u2014&gt; I\ufe0f &lt;\u2014 \ud83d\ude44\ud83d\ude44\ud83d\ude44 @115858",
+        "Hey @115858, fix this I\ufe0f problem",
+        "Heyyyy @115858 can you fix this \nI\ufe0f I\ufe0f",
+        "LOOK @115858 YALL ARE ABOUT TO PISS ME OFF WITH MY I\ufe0f\u2019s GLITCHING. FIX IT.",
+        "Ok @115858 this \u201cI\ufe0f\u201d shit is getting on my damn nerves. Please hurry up and fix it. Tysm.",
+        "@115858 @AppleSupport y\u2019all fixing this I\ufe0f thing or nah?"
+      ]
+    },
+    {
+      "cluster_id": 4,
+      "size": 350,
+      "pct": 17.5,
+      "keywords": [
+        "phone",
+        "update",
+        "iphone",
+        "fix",
+        "why",
+        "off",
+        "just"
+      ],
+      "representative_examples": [
+        "@AppleSupport ever since the update my phone has been glitching like crazy \ud83e\udd2c\ud83e\udd2c\ud83e\udd2c\ud83e\udd2c",
+        "My phone is freaking out, fix it!!! @115858 \ud83d\ude29",
+        "Since I updated my phone my phones completely fucked up \ud83d\ude44@AppleSupport @115858",
+        "@AppleSupport FIX YOUR DAMN UPDATE. My phone keeps blacking out for a second when I\ufe0f type a long message and then I\ufe0f lose I\ufe0ft. Not happy\ud83e\udd2c\ud83d\ude21",
+        "@115858 is doing all of these updates but can\u2019t explain to me why my phone freezes up and i have to literally turn it on and off just to use it \ud83d\ude20\ud83d\ude20\ud83d\ude20",
+        "@AppleSupport Also, I\u2019ve realized this all happened when I updated my phone from not this update but from the one before. I have the newest update but it didn\u2019t fix the problem",
+        "my phone has been messing up soooo much lately\ud83d\ude24 @115858 U SUCK",
+        "@AppleSupport aye bro my phone been tweaking since I updated it man"
+      ]
+    },
+    {
+      "cluster_id": 5,
+      "size": 221,
+      "pct": 11.1,
+      "keywords": [
+        "apple",
+        "iphone",
+        "phone",
+        "from",
+        "help",
+        "just",
+        "your"
+      ],
+      "representative_examples": [
+        "@AppleSupport  Just got email from __email__ - asked me for order # after had loan app problem with iPhone X order. Legit?",
+        "@124825 @115858 I have no idea how I\u2019d be able to verify that. ordered it through the Apple store, carrier is up, and my account is very available to Apple",
+        "@AppleSupport Bad service provided by Apple support#mishandled case#making fool of customers#case ID 100283839308",
+        "Hey @AppleSupport why does it take 3 weeks to reset Apple ID. It\u2019s getting ridiculous! Can you respond please for the second time of asking?",
+        "@AppleSupport I have the very latest version, and will have to charge my phone before DM\u2019ing you. 2% \ud83d\ude44",
+        "@AppleSupport 31 hours and I still haven\u2019t received my reservation email for iPhoneX. Your call center also won\u2019t answer due to call volume",
+        "Dam @AppleSupport I preordered my I phone x on the Oct 27 at exactly 2:01.And it still hasn't came. Now @ATT saying you guys are out of stok",
+        "@AppleSupport ordered iPhone X w/ you guys now you\u2019re saying it\u2019s canceled it was rejected by AT&amp;T, AT&amp;T says that\u2019s not the case help?!?"
+      ]
+    },
+    {
+      "cluster_id": 6,
+      "size": 377,
+      "pct": 18.9,
+      "keywords": [
+        "ios",
+        "iphone",
+        "update",
+        "phone",
+        "new",
+        "has",
+        "fix"
+      ],
+      "representative_examples": [
+        "@AppleSupport please fix our IOS. I even got a new phone thinking that was the issue just to have the same problems. \ud83d\ude2d",
+        "Also the phone has become quite unstable after the update. This is really surprising on an Apple device @AppleSupport @115858 #iOS11",
+        "@AppleSupport I updated my phone to IOS 11 and it sucks, it\u2019s  Slow,battery dies within a couple hours everything\u2019s messed up!! #fixit",
+        "iOS 11.0.2 is so buggy. Never had so many issues after big releases. Im using an iPhone 7 Plus @115858",
+        "iOS 11.0.3 has basically turned my phone into a brick. Thanks @AppleSupport !!!!!",
+        "OMDz what\u2019s with the new IOS11 updates? My iPhone 6 has turned to shit since these updates. It\u2019s slow, unresponsive and like I said shit \ud83d\ude21 sort it @115858 #rantover #iphoneproblems",
+        "How come the #iOS11 update that\u2019s meant to better my #iPhone has just fucked it up? Very poor from @115858.",
+        "@AppleSupport Yes \ud83d\ude1e unfortunately it just got worse and worse with the iOS 11 updates. Any ongoing work to improve? \ud83d\ude0a Thanks and happy weekend!"
+      ]
+    },
+    {
+      "cluster_id": 7,
+      "size": 189,
+      "pct": 9.4,
+      "keywords": [
+        "battery",
+        "phone",
+        "ios",
+        "iphone",
+        "update",
+        "life",
+        "since"
+      ],
+      "representative_examples": [
+        "Yo @115858 , seriously need to fix the battery issue with iOS 11. Watching the % go down like a second counter... \ud83d\ude05",
+        "@AppleSupport iPhone battery is terrible with latest iOS upgrade.  Only 9:30am and only have 40% left. Woke at 7am and all I did was check emails and Twitter.",
+        "@AppleSupport Please give a update to fix battery issue \ni started hating apple products after this #iOS11 update",
+        "The @115858 iOS 11 including the newest update to 11.0.3 has DESTROYED my battery.\n\nWhat a trainwreck.",
+        "@AppleSupport My battery life has decreased tremendously. Also I just did the most recent IOS update (this morning)",
+        "@AppleSupport what is it with this ios11 update? It just seems to completely drain my battery after just a few hours #iphone",
+        "@116333 @115858 what\u2019s up with IOS 11? My phone is now soooo slow and my battery does not last \ud83d\ude24",
+        "#iOS11 is absolute murder on the battery, anyone else finding this is an issue? @115858 did you screw up?"
+      ]
+    }
+  ]
+}

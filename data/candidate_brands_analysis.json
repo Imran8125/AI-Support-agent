@@ -1,0 +1,122 @@
+{
+  "AppleSupport": {
+    "reply_count": 106648,
+    "avg_cust_chars": 109.3,
+    "avg_brand_chars": 136.6,
+    "pct_mentioning_dm": 52.55,
+    "pct_containing_link": 75.37,
+    "pct_asking_question": 31.14,
+    "samples": [
+      {
+        "customer_tweet": "@AppleSupport I\ufe0f can connect just fine but my phone won\u2019t download anything or load any apps and my WiFi is totally fine because my other devices work",
+        "brand_reply": "@516039 Understood.  Check here under step 6: https://t.co/2WRbhvw0dM Let us know if you can connect after that."
+      },
+      {
+        "customer_tweet": "So @AppleSupport my speaker just gon stop working everytime y\u2019all have a new update \ud83e\udd14",
+        "brand_reply": "@273855 We'd like to help. Tell us what device is this occurring with? What is the operating system version number it's running?"
+      },
+      {
+        "customer_tweet": "@AppleSupport look, i just got this iPhone 8 and i would like to ask y\u2019all why is my phone tripping and dying so fast \ud83d\ude10",
+        "brand_reply": "@170489 We want to make sure your iPhone is there for you when you need it. So we can get started, let's pair up in DM to take a closer look at this. https://t.co/GDrqU22YpT"
+      },
+      {
+        "customer_tweet": "@814571 @AppleSupport please update the published date of Security Update 2017-001.  Unless you have a time machine this date is incorrect and manual downloaders may be confused about whether its the right patch. https://t.co/gutki0WsMH",
+        "brand_reply": "@814570 We are seeing todays date at this link: https://t.co/B5dcmAftzp If you are seeing a different date, please reach out in DM. https://t.co/GDrqU22YpT"
+      },
+      {
+        "customer_tweet": "@AppleSupport recent update for IPad and IPhone have made it difficult to open certain applications",
+        "brand_reply": "@163247 Let us know which apps you're having trouble with, and what happens when you try to open them. We're here for you!"
+      }
+    ]
+  },
+  "SpotifyCares": {
+    "reply_count": 43206,
+    "avg_cust_chars": 104.1,
+    "avg_brand_chars": 129.6,
+    "pct_mentioning_dm": 30.77,
+    "pct_containing_link": 50.52,
+    "pct_asking_question": 44.95,
+    "samples": [
+      {
+        "customer_tweet": "Can someone please tell me how to start an artist radio station o.n this @115888 app on  this #xboxone app ? I be damned if I see how ??",
+        "brand_reply": "@169626 Hey there! At this time, we're afraid this isn't possible. There's more info about this here: https://t.co/IQvWN7FkZu /NQ"
+      },
+      {
+        "customer_tweet": "@SpotifyCares having trouble activating a Family Premium account. Got the email with code but get 600 error message, now can't access page",
+        "brand_reply": "@614298 Hey Matt, help's here! Can you DM us your account's username or email address? We'll take a look under the hood /RS https://t.co/ldFdZRiNAt"
+      },
+      {
+        "customer_tweet": "@554978 \u305f\u3060spotify\u306f\u7121\u6599\u4f1a\u54e1\u3060\u3068\u3001\u30b7\u30e3\u30c3\u30d5\u30eb\u3067\u3057\u304b\u518d\u751f\u3067\u304d\u306a\u304b\u3063\u305f\u308a\u9014\u4e2d\u3067\u95a2\u4fc2\u306a\u3044\u66f2\u5165\u308c\u3089\u308c\u305f\u308a\u65e9\u9001\u308a\u304c\uff15\u66f2\uff1f\u304f\u3089\u3044\u307e\u3067\u3057\u304b\u3067\u304d\u306a\u304f\u3066\u6163\u308c\u308b\u307e\u3067\u5c11\u3057\u30a4\u30e9\u30a4\u30e9\u3057\u307e\u3059\u7b11",
+        "brand_reply": "@554977 \u30c4\u30a4\u30fc\u30c8\u62dd\u898b\u3057\u307e\u3057\u305f\u3002Free\u30e6\u30fc\u30b6\u30fc\u3067\u30b9\u30de\u30db\u3092\u3054\u5229\u7528\u306e\u5834\u5408\u306f\u30b7\u30e3\u30c3\u30d5\u30eb\u518d\u751f\u3068\u306a\u308a\u307e\u3059\u304c\u3001\u6642\u9593\u5236\u9650\u306a\u3057\u3067\u304a\u697d\u3057\u307f\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u30bf\u30d6\u30ec\u30c3\u30c8\u3084\u30d1\u30bd\u30b3\u30f3\u3067\u306f\u30b7\u30e3\u30c3\u30d5\u30eb\u306a\u3057\u306715\u6642\u9593/30\u65e5\u307e\u3067\u3054\u5229\u7528\u3044\u305f\u3060\u3051\u307e\u3059\u3002\u8a73\u3057\u304f\u306f\u3053\u3061\u3089\u2192 https://t.co/OoJIjpfeRy /AH"
+      },
+      {
+        "customer_tweet": "@SpotifyCares Thank you, I know that it\u2019s something a lot of people would like too, there was even a petition started somewhere! X",
+        "brand_reply": "@751180 We've already passed your feedback on to the right folks. If you need anything else, let us know. We're always... https://t.co/30FxtpFyVv \ud83d\ude42 /BD"
+      },
+      {
+        "customer_tweet": "@SpotifyCares It's not song specific, but it might be playlist specific. It doesn't happen on my Mac, and I only have this mobile device.",
+        "brand_reply": "@707288 We understand. Could you send us a DM with your account's email address or username? We'll take a look backstage /CO https://t.co/ldFdZRiNAt"
+      }
+    ]
+  },
+  "AmazonHelp": {
+    "reply_count": 168823,
+    "avg_cust_chars": 116.6,
+    "avg_brand_chars": 123.9,
+    "pct_mentioning_dm": 0.64,
+    "pct_containing_link": 41.33,
+    "pct_asking_question": 27.07,
+    "samples": [
+      {
+        "customer_tweet": "Yo necesitaba elevar el espejo de mi tocador y encontr\u00e9 esta soluci\u00f3n en @116928 que os parece?\n#Amazon https://t.co/0quPto0kx4",
+        "brand_reply": "@565800 Hola, Aranzazu. \u00a1Una soluci\u00f3n inteligente y pr\u00e1ctica! Espero que est\u00e9s disfrutando de tu compra. :D ^CR https://t.co/fQfvAHx8nj"
+      },
+      {
+        "customer_tweet": "@AmazonHelp Once You Receive..? I did't Send by Postal Mail. Its a Digital Form...Hope You could Get it Instantly!By the Way What is ^SQ, ^NR and ^SV ?",
+        "brand_reply": "@367525 Sorry for the confusion. Request you to write back to the email you've received from our team and we (1/2)^SQ"
+      },
+      {
+        "customer_tweet": "@AmazonHelp so I\u2019ve had an issue and no one has responded to me \ud83d\ude10",
+        "brand_reply": "@479947 We'd love to take a closer look into your order with you here: https://t.co/hApLpMlfHN ^QJ"
+      },
+      {
+        "customer_tweet": "@AmazonHelp Thank you",
+        "brand_reply": "@366678 You are welcome, Akshay. ^AU"
+      },
+      {
+        "customer_tweet": "@137605 Ayer no me entregaron un paquete de @116928 por ausente a las 18:35. Pero si me entregan un certificado de @4496  a esa misma hora. Concerto 2\u00b0entrega hoy de 17 a 20 horas y aqu\u00ed sigo esperando como un gilipollas. ES UNA PUTA VERGUENZA\uff01 @135806",
+        "brand_reply": "@221198 Hola, lamentamos los inconvenientes que est\u00e1s teniendo con tu entrega. Podr\u00edas indicarnos \u00bfcu\u00e1l es la fecha de entrega que te indicamos en el correo electr\u00f3nico de confirmaci\u00f3n del pedido y si has logrado comunicarte con el transportista? ^MZ"
+      }
+    ]
+  },
+  "Uber_Support": {
+    "reply_count": 56193,
+    "avg_cust_chars": 120.2,
+    "avg_brand_chars": 110.1,
+    "pct_mentioning_dm": 35.34,
+    "pct_containing_link": 51.29,
+    "pct_asking_question": 5.47,
+    "samples": [
+      {
+        "customer_tweet": "@Uber_Support I am overcharged by UBER without information. I never expected this from Uber, \u20b9 399 Minimum112.30. This 112.30\n\nVisit the trip page for more information, including invoices (where available)\nxid12201f90-4eca-47c0-95ac-854487ceb61c\npGvlI2ANUbXFfyEOgxta1RMV082993",
+        "brand_reply": "@677936 Here to help! Send us a note here, https://t.co/oEOANqFpjc and our team will follow up."
+      },
+      {
+        "customer_tweet": "@115873 how do I get in contact with you due to a payment error on your end??",
+        "brand_reply": "@287971 Here to help! Send us a note via https://t.co/zpq2qqd9a2 so our team can connect."
+      },
+      {
+        "customer_tweet": "Uninstalling y'all suck @115873 @Uber_Support",
+        "brand_reply": "@695893 Here to help! Can you please send us a DM of your email address and more details regarding your concern? So we can assist further."
+      },
+      {
+        "customer_tweet": "@Uber_Support I got an e-mail that I need to upload a older copy of my license to continue my background check. The e-mail leads me to Chekr where there is nowhere to upload the copy and I can't figure out how to upload on uber either?",
+        "brand_reply": "@642075 We're here to help. Please DM us the email address linked to your Uber account and we'll follow up."
+      },
+      {
+        "customer_tweet": "Can @115873 end car ownership?",
+        "brand_reply": "@206243 Happy to help! Can you please provide us more specific details so we can assist?"
+      }
+    ]
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "baseline_a": {
+    "name": "Majority Class Predictor",
+    "majority_class": "other_unclear",
+    "accuracy": 0.1111,
+    "macro_f1": 0.0222
+  },
+  "baseline_b": {
+    "name": "TF-IDF + Logistic Regression",
+    "accuracy": 0.6296,
+    "macro_f1": 0.6371
+  }
+}

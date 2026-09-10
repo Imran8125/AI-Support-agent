@@ -1,0 +1,1802 @@
+[
+  {
+    "customer_text": "Somebody hacked my Apple account and @115858 ain\u2019t doing nothing to fix it.",
+    "intent": "account_icloud_security",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer is reporting that their Apple account has been hacked or compromised.",
+    "draft_reply": "@customer We want to help you regain control of your account. Please provide us with more details regarding the security issue via DM here: [Link/Instruction]",
+    "top_retrieval_similarity": 0.7433511018753052,
+    "precedents": [
+      {
+        "thread_id": 2185542,
+        "customer_text": "All my numbers wiped from my #Iphone @115858 not sure how but maybe it\u2019s a good thing\ud83d\ude33\ud83d\ude44 When are you going to fix this annoying problem? I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f really annoying!",
+        "clean_customer_text": "All my numbers wiped from my #Iphone not sure how but maybe it\u2019s a good thing\ud83d\ude33\ud83d\ude44 When are you going to fix this annoying problem? I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f really annoying!",
+        "brand_reply": "@640069 We can help out with the contact numbers. Were any changes made to the device prior to them being removed? \n\nAs for the text replacement. Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+        "has_followup": true,
+        "followup_text": "@AppleSupport Thanks done that already and it\u2019s still the annoying I\ufe0f pops up see? I\ufe0f went and did it again but you still see I\ufe0f",
+        "created_at": "Thu Nov 09 14:20:33 +0000 2017",
+        "similarity": 0.7433511018753052
+      },
+      {
+        "thread_id": 1375738,
+        "customer_text": "@AppleSupport 4 calls in a row, nonsense info, travel abroad to change my DEAD #AppleWatch and still got no solution from @115858",
+        "clean_customer_text": "4 calls in a row, nonsense info, travel abroad to change my DEAD #AppleWatch and still got no solution from",
+        "brand_reply": "@440245 We want to help out. Go ahead and provide us with more details within DM here: https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 16 14:21:21 +0000 2017",
+        "similarity": 0.7059632539749146
+      },
+      {
+        "thread_id": 1981092,
+        "customer_text": "@115858 My alarm doesn\u2019t ring &amp; I keep waking up to check the time ! It\u2019s not even my fault Apple created this stupid OS .",
+        "clean_customer_text": "My alarm doesn\u2019t ring &amp; I keep waking up to check the time ! It\u2019s not even my fault Apple created this stupid OS .",
+        "brand_reply": "@586417 We'd like to help get it back to where you can enjoy it again. Is iOS 11.1 the version installed currently? https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Oct 31 23:51:06 +0000 2017",
+        "similarity": 0.7037767767906189
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The inquiry involves a critical account security breach (hacking), which requires immediate, personalized verification and recovery steps only a human specialist can provide.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 2,
+    "golden_intent": "account_icloud_security",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@331074 We'd like to help. Let's take this to DM and we'll explore ways to provide you assistance. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.131
+  },
+  {
+    "customer_text": "\u0130cloud'da yedekledi\u011fimiz fotolar\u0131 bilgisayara nas\u0131l al\u0131yoruz? @AppleSupport",
+    "intent": "apps_services_media",
+    "confidence": 0.98,
+    "intent_reasoning": "The user is asking for instructions on retrieving photos backed up in iCloud to a computer.",
+    "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The user wants to know how to download photos backed up in iCloud onto a computer (PC).\n    *   *Original message:* \"\u0130cloud'da yedekledi\u011fimiz fotolar\u0131 bilgisayara nas\u0131l al\u0131yoruz? @AppleSupport\" (How do we get the photos backed up in iCloud onto the computer?)\n    *   *Intent:* apps_services_media (iCloud Photos/Download).\n\n2.  **Analyze the Constraints & Persona:**\n    *   Role: Official Apple Support Agent (@AppleSupport).\n    *   Tone: Polite, empathetic, concise, technically accurate.\n    *   Format: Twitter reply (under 240 characters).\n    *   Crucial Rule: Ground response strictly in provided precedents. Do not invent details/links.\n\n3.  **Analyze the Precedents:**\n    *   [P1] (iCloud Photos issue, directs to specialized team/link).\n    *   [P2] (Language barrier, directs to specific language support links).\n    *   [P3] (Downloading issue/pain point, directs to DM for more info/specific link).\n\n4.  **Determine the Best Course of Action:**\n    *   The user is asking a technical \"how-to\" question (downloading photos).\n    *   Precedents P1 and P3 handle technical issues related to iCloud/downloading by moving the conversation off Twitter or directing them to a specific support flow.\n    *   Since this is a technical process question that might require troubleshooting steps (like using the iCloud website, syncing via Photos app, etc.), the most appropriate action, mirroring P3 (which deals with downloading pain points), is to gather more information or move the conversation into a private channel (DM).\n\n5.  **Drafting - Attempt 1 (Focus on moving the conversation):**\n    *   *Goal:* Acknowledge the request and ask for more details to provide accurate instructions.\n    *   *Draft:* We'd like to help you download your photos! To give you the best instructions, please DM us and we'll guide you through the process. Thanks! [Link/Handle] (This mirrors P3 structure).\n\n6.  **Refining and Applying Tone/Constraints:**\n    *   The question is simple (\"How do I download?\"). A direct \"DM us\" might seem abrupt. However, given the precedents push complex issues to DM, this is the safest approach if a simple link isn't available.\n    *   Let's use the structure of P3, as it deals with the \"downloading\" pain point.\n\n7.  **Final Polish (Concise, Empathetic, Actionable):**\n    *   Acknowledge the task. Offer help. Direct",
+    "top_retrieval_similarity": 0.7463859915733337,
+    "precedents": [
+      {
+        "thread_id": 1296845,
+        "customer_text": "@AppleSupport hello, I\u2019m having trouble with my icloud photos, all of the photos I took in class were blur and I need them for studying\ud83d\ude2d",
+        "clean_customer_text": "hello, I\u2019m having trouble with my icloud photos, all of the photos I took in class were blur and I need them for studying\ud83d\ude2d",
+        "brand_reply": "@423105 Our Photos team is ready and waiting to solve this with you. You can reach them here to get started:  https://t.co/IBIY3vMgPj",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Oct 26 21:08:32 +0000 2017",
+        "similarity": 0.7463859915733337
+      },
+      {
+        "thread_id": 847088,
+        "customer_text": "\u00bfPor que desaparecieron fotos de mi iPhone? HELP @AppleSupport \ud83d\ude2d",
+        "clean_customer_text": "\u00bfPor que desaparecieron fotos de mi iPhone? HELP \ud83d\ude2d",
+        "brand_reply": "@321318 We offer support via Twitter in English. Get help in Spanish here: https://t.co/IBIY3vMgPj or join https://t.co/OczyRx7IOs",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 20 10:13:48 +0000 2017",
+        "similarity": 0.7388538122177124
+      },
+      {
+        "thread_id": 1485383,
+        "customer_text": "@AppleSupport Downloading multiple pics frm iCloud to PC is excruciatingly painful.Ctrl+Shft doesnt work. Comeon Apple, ur better thn ths",
+        "clean_customer_text": "Downloading multiple pics frm iCloud to PC is excruciatingly painful.Ctrl+Shft doesnt work. Comeon Apple, ur better thn ths",
+        "brand_reply": "@464932 We'd like to learn more about this. Please DM us &amp; we'll go from there. Thanks! https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Nov 03 02:51:10 +0000 2017",
+        "similarity": 0.7085002064704895
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The inquiry is a common procedural 'how-to' question regarding iCloud photo synchronization and download, which can be fully addressed by the AI assistant.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 21,
+    "golden_intent": "account_icloud_security",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@687449 We offer support via Twitter in English. Contact us for help in your preferred language here: https://t.co/IBIY3vMgPj",
+    "latency_seconds": 0.103
+  },
+  {
+    "customer_text": "@AppleSupport Please, this alert doesn\u2019t tell me what I\u2019m giving my password to or what for and it bothers me constantly. How am I supposed to know some third party app isn\u2019t trying to scam me? https://t.co/qm5kVavhqt",
+    "intent": "account_icloud_security",
+    "confidence": 0.98,
+    "intent_reasoning": "Customer is concerned about account security and potential phishing/scam attempts involving third-party apps.",
+    "draft_reply": "@customer We understand your concern about security alerts. If you are unsure if a prompt or alert is legitimate, please check out our official guides on identifying and reporting suspicious activity for your peace of mind. [Link to security resource]",
+    "top_retrieval_similarity": 0.7450077533721924,
+    "precedents": [
+      {
+        "thread_id": 1145134,
+        "customer_text": "@AppleSupport I just got a v suspect email advising me to click a link otherwise my Apple ID will be locked permanently. Is this \ud83c\udf4f?",
+        "clean_customer_text": "I just got a v suspect email advising me to click a link otherwise my Apple ID will be locked permanently. Is this \ud83c\udf4f?",
+        "brand_reply": "@389508 For help with identifying and reporting emails like this, check out this web page: https://t.co/yGvlh3cZ5Y",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Oct 15 16:03:52 +0000 2017",
+        "similarity": 0.7450077533721924
+      },
+      {
+        "thread_id": 1991488,
+        "customer_text": "Yo, @115858, why are my notifications popping up like this? \ud83e\udd96\ud83e\udd96 https://t.co/cHWczBuADS",
+        "clean_customer_text": "Yo, , why are my notifications popping up like this? \ud83e\udd96\ud83e\udd96",
+        "brand_reply": "@589383 We can help look into the root cause as to why this is occurring. Send us a DM with your device &amp; iOS version to get started. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Nov 03 02:54:32 +0000 2017",
+        "similarity": 0.7109532356262207
+      },
+      {
+        "thread_id": 1305216,
+        "customer_text": "@115858 can you please tell me the Twitter handle for help with frequent flyer points with Apple purchases in Australia? Thx.",
+        "clean_customer_text": "can you please tell me the Twitter handle for help with frequent flyer points with Apple purchases in Australia? Thx.",
+        "brand_reply": "@424994 Great question! Let's have you reach out to your regional support for additional guidance here: https://t.co/IBIY3vMgPj",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 01:54:50 +0000 2017",
+        "similarity": 0.7041077017784119
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Deterministic trigger: High-hostility sentiment or accusation of fraud/scam warrants human review.",
+    "escalation_method": "deterministic_rule",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 28,
+    "golden_intent": "account_icloud_security",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@764486 Thanks for reaching out. DM which app you are in when you see this message appear to get started. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.155
+  },
+  {
+    "customer_text": "How tf am I randomly gonna get signed out of my iCloud and then when I type in the correct info it doesn\u2019t sign me in \ud83d\ude11 @AppleSupport",
+    "intent": "account_icloud_security",
+    "confidence": 0.98,
+    "intent_reasoning": "The user is experiencing authentication failures and being randomly signed out of their iCloud account.",
+    "draft_reply": "@customer We're here to help with any issues you may be having regarding your sign-in trouble. Please join us in a DM so we can look into this for you. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7416716814041138,
+    "precedents": [
+      {
+        "thread_id": 53538,
+        "customer_text": "@AppleSupport Major security breach on iCloud evident - any issues reported? Sign-in and got other people\u2019s information, books, music etc etc",
+        "clean_customer_text": "Major security breach on iCloud evident - any issues reported? Sign-in and got other people\u2019s information, books, music etc etc",
+        "brand_reply": "@128097 We'd like to look into this with you. Let's continue in DM. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Nov 01 18:37:40 +0000 2017",
+        "similarity": 0.7416716814041138
+      },
+      {
+        "thread_id": 41707,
+        "customer_text": "Please @115858 what the heck! Ever since I updated my iPhone I can\u2019t even use Apple TV Keeps asking me to sign in I give the code, asks again",
+        "clean_customer_text": "Please what the heck! Ever since I updated my iPhone I can\u2019t even use Apple TV Keeps asking me to sign in I give the code, asks again",
+        "brand_reply": "@125180 We're here to help with any issues you may be having. Select the following to join us in a DM and we'll continue there. https://t.co/GDrqU22YpT",
+        "has_followup": true,
+        "followup_text": "@AppleSupport Once I removed two step authentication it all went back to normal - thanks for responding",
+        "created_at": "Wed Nov 01 00:09:05 +0000 2017",
+        "similarity": 0.7309141755104065
+      },
+      {
+        "thread_id": 1574353,
+        "customer_text": "What\u2019s up with my iPhone??\nEverytime I\ufe0f try typing \u201cI\ufe0f\u201d it types this \ud83d\ude24 @115858 @AppleSupport https://t.co/BT3t3zcNmP",
+        "clean_customer_text": "What\u2019s up with my iPhone?? Everytime I\ufe0f try typing \u201cI\ufe0f\u201d it types this \ud83d\ude24",
+        "brand_reply": "@485198 Check out this resource. If you type the letter \u201ci\u201d &amp; it autocorrects to an \u201cA\u201d with a symbol: https://t.co/xXaXeeSRt9",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Nov 04 04:40:18 +0000 2017",
+        "similarity": 0.7277749180793762
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The issue involves account security and sign-in failure, which often requires personalized troubleshooting or verification beyond the scope of automated support.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 34,
+    "golden_intent": "account_icloud_security",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@823162 We'd like to help you get this resolved. Are you getting error messages when this happens?",
+    "latency_seconds": 0.043
+  },
+  {
+    "customer_text": "@AppleSupport I am trying to reset my security questions and it is not allowing me to. I am now locked out of iMessage",
+    "intent": "account_icloud_security",
+    "confidence": 0.98,
+    "intent_reasoning": "The user is locked out due to inability to reset account security questions, affecting iMessage service.",
+    "draft_reply": "@customer We understand this is frustrating. To help you regain access and sort out the security questions, please DM us some details about your account and devices. We'll take it from there! https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7718293070793152,
+    "precedents": [
+      {
+        "thread_id": 2977301,
+        "customer_text": "@AppleSupport how do I get iMessages to work on my MacBook Pro again? It won't let me login",
+        "clean_customer_text": "how do I get iMessages to work on my MacBook Pro again? It won't let me login",
+        "brand_reply": "@407328 We're glad to help get your iMessages working on your Mac again. Meet us in DM with some details, such as the exact version of macOS you're using, what happened when your iMessages stopped working, and which country you're in, and we'll take it from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Nov 16 23:29:10 +0000 2017",
+        "similarity": 0.7718293070793152
+      },
+      {
+        "thread_id": 1990339,
+        "customer_text": "Is this happening with anyone #imessage @AppleSupport https://t.co/X1nhXCtGV3",
+        "clean_customer_text": "Is this happening with anyone #imessage",
+        "brand_reply": "@571627 We\u2019d like to understand more about this. DM us some details about what's going on, and we\u2019ll take it from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Nov 02 14:05:19 +0000 2017",
+        "similarity": 0.7490166425704956
+      },
+      {
+        "thread_id": 2060365,
+        "customer_text": "my iMessage is all kinds of messed up after this update, wth @115858",
+        "clean_customer_text": "my iMessage is all kinds of messed up after this update, wth",
+        "brand_reply": "@609375 We'd love to help you with this. Messed up in what way? On which device? Let us know in DM so we can dig in and sort it out. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Oct 07 13:34:04 +0000 2017",
+        "similarity": 0.7383732199668884
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The issue involves account security and being locked out of iMessage, requiring human verification to safely assist with password or security setting resets.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 5,
+    "golden_intent": "apps_services_media",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@268714 For the best assistance with your Apple ID, and resetting your security questions, please reach out directly to our Apple ID Advisors here: https://t.co/UJm15vmMM2",
+    "latency_seconds": 0.039
+  },
+  {
+    "customer_text": "@AppleSupport Is music streaming possible on the non LTE Apple Watch 3",
+    "intent": "apps_services_media",
+    "confidence": 0.98,
+    "intent_reasoning": "Inquiry regarding the compatibility and functionality of music streaming on a specific device model.",
+    "draft_reply": "@customer Music streaming capability depends on your connectivity. If it's non-LTE, you will need to be connected to Wi-Fi or paired with your iPhone. Let us know if you have specific issues!",
+    "top_retrieval_similarity": 0.7921918630599976,
+    "precedents": [
+      {
+        "thread_id": 1535040,
+        "customer_text": "@AppleSupport Question. Should the Apple Watch series 3 w/LTE be able to send text and imessages over LTE, without wifi or nearby iphone?",
+        "clean_customer_text": "Question. Should the Apple Watch series 3 w/LTE be able to send text and imessages over LTE, without wifi or nearby iphone?",
+        "brand_reply": "@476022 Take a look at this article for specifics on messaging with the Apple Watch Series 3 (GPS + Cellular): https://t.co/c02ifgvYsE",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Nov 03 20:24:57 +0000 2017",
+        "similarity": 0.7921918630599976
+      },
+      {
+        "thread_id": 1329984,
+        "customer_text": "@AppleSupport did you get any issues with #AppleMusic recently? https://t.co/Yp0e83kB58",
+        "clean_customer_text": "did you get any issues with #AppleMusic recently?",
+        "brand_reply": "@242836 Our System Status website shows all is working. Are you continuing to have the same issues? https://t.co/7NVrDovSd8",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 03:47:27 +0000 2017",
+        "similarity": 0.7154364585876465
+      },
+      {
+        "thread_id": 373350,
+        "customer_text": "@115858 I upgraded to the iPhone 8plus and series 3 watch so I can go run without my phone. Music won\u2019t sync to my phone. Can\u2019t open the app",
+        "clean_customer_text": "I upgraded to the iPhone 8plus and series 3 watch so I can go run without my phone. Music won\u2019t sync to my phone. Can\u2019t open the app",
+        "brand_reply": "@204471 Let's take a look at this together. Is everything fully up to date on the watch and the iPhone? Let us know in DM. https://t.co/GDrqU22YpT",
+        "has_followup": true,
+        "followup_text": "@AppleSupport I think I figured it out. It was showing all data as other. A hard reboot fixed it. Had to look up how to do that on the iPhone 8 plus",
+        "created_at": "Sun Oct 08 16:49:58 +0000 2017",
+        "similarity": 0.7125309705734253
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "This is a compatibility question regarding product functionality that can be answered using existing knowledge base information without requiring account access or advanced troubleshooting.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 7,
+    "golden_intent": "apps_services_media",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@662533 Great question. Check out this article for more information: https://t.co/kPrTO9IGph",
+    "latency_seconds": 0.032
+  },
+  {
+    "customer_text": "Hi @AppleSupport i'm having problems (again) with your ever-bugging iTunes software. plz help",
+    "intent": "os_software_glitch",
+    "confidence": 0.92,
+    "intent_reasoning": "The user is reporting a malfunction or bug with the iTunes software.",
+    "draft_reply": "We understand this is frustrating. We want to help you with iTunes! Please DM us the details of the issue so we can look into it for you.",
+    "top_retrieval_similarity": 0.7874659895896912,
+    "precedents": [
+      {
+        "thread_id": 998761,
+        "customer_text": "@AppleSupport are you guys working on a fix for latest iTunes 12.7.0.166 upgrade? Interrupted playback of music library makes it unusable\ud83d\ude21",
+        "clean_customer_text": "are you guys working on a fix for latest iTunes 12.7.0.166 upgrade? Interrupted playback of music library makes it unusable\ud83d\ude21",
+        "brand_reply": "@356492 We want to help you with iTunes. DM us, and we can look into this. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Oct 31 01:27:39 +0000 2017",
+        "similarity": 0.7874659895896912
+      },
+      {
+        "thread_id": 1329984,
+        "customer_text": "@AppleSupport did you get any issues with #AppleMusic recently? https://t.co/Yp0e83kB58",
+        "clean_customer_text": "did you get any issues with #AppleMusic recently?",
+        "brand_reply": "@242836 Our System Status website shows all is working. Are you continuing to have the same issues? https://t.co/7NVrDovSd8",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 03:47:27 +0000 2017",
+        "similarity": 0.7874443531036377
+      },
+      {
+        "thread_id": 2035633,
+        "customer_text": "@AppleSupport do you provide support for Apple Music? I keep getting unknown error -12894 on two specific songs",
+        "clean_customer_text": "do you provide support for Apple Music? I keep getting unknown error -12894 on two specific songs",
+        "brand_reply": "@601826 We're here to help. Please DM us via the following link the device model in which the error appears for you. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Nov 07 15:55:55 +0000 2017",
+        "similarity": 0.7727991938591003
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The inquiry describes a common software glitch with iTunes, which can likely be addressed using initial diagnostic steps available in the knowledge base.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 16,
+    "golden_intent": "apps_services_media",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@768076 We want to help! What model of device are you having issues with? DM us and tell us more about the problems you are having. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.031
+  },
+  {
+    "customer_text": "@AppleSupport I am disabled out of my iPhone and is telling me to connect to iTunes. I am receiving an error code of 0xE000015. Please help",
+    "intent": "os_software_glitch",
+    "confidence": 0.98,
+    "intent_reasoning": "The user is experiencing a critical software failure requiring connection to iTunes due to a specific error code.",
+    "draft_reply": "@customer We understand how frustrating this is. Since you're seeing an error code, please move to DM so we can look into this further and help you troubleshoot. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7903909683227539,
+    "precedents": [
+      {
+        "thread_id": 359286,
+        "customer_text": "@AppleSupport my phone permanently says it's disabled and that I must connect it to iTunes but even when I do connect it, nothing happens :(",
+        "clean_customer_text": "my phone permanently says it's disabled and that I must connect it to iTunes but even when I do connect it, nothing happens :(",
+        "brand_reply": "@201085 Okay, let's move to DM so we can look into this further. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 09 04:02:18 +0000 2017",
+        "similarity": 0.7903909683227539
+      },
+      {
+        "thread_id": 2015425,
+        "customer_text": "@AppleSupport my phone wont connect with iTunes it keep showing me this error https://t.co/XfrseMle2W",
+        "clean_customer_text": "my phone wont connect with iTunes it keep showing me this error",
+        "brand_reply": "@595973 Let's look into this for you. Which device and iTunes version are you currently using? Let us know in DM. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 05 15:47:24 +0000 2017",
+        "similarity": 0.7775639295578003
+      },
+      {
+        "thread_id": 2312126,
+        "customer_text": "@AppleSupport no my phone is not still connected to the computer , there are no other prompts from iTunes \nI have tried to plug my phone back into computer and reset my phone to a brand new phone and still getting the same message",
+        "clean_customer_text": "no my phone is not still connected to the computer , there are no other prompts from iTunes I have tried to plug my phone back into computer and reset my phone to a brand new phone and still getting the same message",
+        "brand_reply": "@523244 Got it. Are you putting your iPhone in to recovery mode before restoring it per the steps in this article? https://t.co/iYLZzFD8qZ Let us know via a DM. We\u2019ll keep moving from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 12 22:00:00 +0000 2017",
+        "similarity": 0.7501566410064697
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The specific error code (0xE000015) indicates a critical recovery mode issue that requires guided, expert troubleshooting to prevent data loss or unsuccessful attempts.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 27,
+    "golden_intent": "apps_services_media",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@789668 We're happy to help. To start, are you connecting to iTunes on a PC or a Mac? Also, what version of iTunes are you running?",
+    "latency_seconds": 0.033
+  },
+  {
+    "customer_text": "Every time I look away from my phone and look back it drops like 8 percent, figure this battery thing the fuck out @115858",
+    "intent": "battery_power_issue",
+    "confidence": 0.98,
+    "intent_reasoning": "Customer reports rapid and unexplained battery percentage drop.",
+    "draft_reply": "@customer We know how important a reliable battery is. That rapid drop sounds concerning. Please DM us your device model and iOS version so we can look into this for you!",
+    "top_retrieval_similarity": 0.8049623966217041,
+    "precedents": [
+      {
+        "thread_id": 1863533,
+        "customer_text": "why does my phone insist on dying when the battery is @ 29% @115858 y'all truly got me fucked up",
+        "clean_customer_text": "why does my phone insist on dying when the battery is @ 29% y'all truly got me fucked up",
+        "brand_reply": "@556802 That's not normal. Could you Direct Message us and let us know what country you're in? We'll help out. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 20 05:53:02 +0000 2017",
+        "similarity": 0.8049623966217041
+      },
+      {
+        "thread_id": 236844,
+        "customer_text": "@115858 WTF I\u2019ve been using my phone for 15 minutes and my battery life has gone down 24%. I\u2019m about done with you guys.",
+        "clean_customer_text": "WTF I\u2019ve been using my phone for 15 minutes and my battery life has gone down 24%. I\u2019m about done with you guys.",
+        "brand_reply": "@172406 We\u2019d like to offer our support. DM us which device and version of iOS you\u2019re using to begin. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Oct 05 09:52:39 +0000 2017",
+        "similarity": 0.8033879399299622
+      },
+      {
+        "thread_id": 2036337,
+        "customer_text": "Watching my battery % drop... Jesus @115858. The battery issues since day ONE of iOS 11 are getting really tiresome... @123857 @116333",
+        "clean_customer_text": "Watching my battery % drop... Jesus . The battery issues since day ONE of iOS 11 are getting really tiresome...",
+        "brand_reply": "@602046 We know how important it is to have a reliable working battery. Meet us in DM and we can look into some options together. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Nov 06 21:03:22 +0000 2017",
+        "similarity": 0.7966099977493286
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Deterministic trigger: High-hostility sentiment or accusation of fraud/scam warrants human review.",
+    "escalation_method": "deterministic_rule",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 9,
+    "golden_intent": "battery_power_issue",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@136069 Thanks for reaching out about this behavior. Let\u2019s team up to get this addressed. To clarify, approximately how long have you been facing this behavior? Which iPhone are you using? Does this happen while using any particular app or feature?",
+    "latency_seconds": 0.026
+  },
+  {
+    "customer_text": "@115858 IOS update 2 days ago battery draining faster than ever https://t.co/QUGn0RJZpu",
+    "intent": "battery_power_issue",
+    "confidence": 0.98,
+    "intent_reasoning": "Customer reports rapid battery drain following a recent iOS update.",
+    "draft_reply": "@customer We'd be happy to help you sort out your battery life. Please join us in DM so we may better assist you with your device model: https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.8528706431388855,
+    "precedents": [
+      {
+        "thread_id": 1849126,
+        "customer_text": "@115858 @797 I though the iOS update today would fix the battery drain but it actually made it worse &amp; everything is laggy. #fixit please",
+        "clean_customer_text": "I though the iOS update today would fix the battery drain but it actually made it worse &amp; everything is laggy. #fixit please",
+        "brand_reply": "@553662 We'd be happy to help with your battery life and system performance. Can you DM us the model of iPhone we are working with? https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Oct 18 19:50:19 +0000 2017",
+        "similarity": 0.8528706431388855
+      },
+      {
+        "thread_id": 866246,
+        "customer_text": "@AppleSupport my iPhone battery is draining significantly faster after the update to IOS 11.0.3. Is there anything I can do to correct this?",
+        "clean_customer_text": "my iPhone battery is draining significantly faster after the update to IOS 11.0.3. Is there anything I can do to correct this?",
+        "brand_reply": "@325684 Let us help you get that sorted out. Join us in DM so we may better assist you: https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 20 16:32:19 +0000 2017",
+        "similarity": 0.8351048827171326
+      },
+      {
+        "thread_id": 1841170,
+        "customer_text": "@115858 @AppleSupport iOS 11 is draining my battery TERRIBLY!!! You see all the news and posts about it. When are you going to fix it?!?!",
+        "clean_customer_text": "iOS 11 is draining my battery TERRIBLY!!! You see all the news and posts about it. When are you going to fix it?!?!",
+        "brand_reply": "@551763 There can be many factors affecting battery performance. Let\u2019s look into what\u2019s happening. DM us which iPhone you have. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Oct 18 00:50:05 +0000 2017",
+        "similarity": 0.8345077037811279
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "This is a common technical issue (post-update battery drain) that can likely be addressed using known diagnostic steps available in the knowledge base.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 19,
+    "golden_intent": "battery_power_issue",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@760386 We'd be happy to help. Send us a DM with a few details and we can start there. https://t.co/GDrqU2kzhr",
+    "latency_seconds": 0.033
+  },
+  {
+    "customer_text": "@AppleSupport My battery is ok (one app suggests that since I have iOS11 the battery capacity dropped to 88%) and I\u2019m always in the latest public release, which is 11.1.2 at the moment.",
+    "intent": "battery_power_issue",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer is inquiring about or reporting a drop in battery health/capacity percentage.",
+    "draft_reply": "@customer We want to help look into your battery concerns. Please send us a DM and we can go from there. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.8029943108558655,
+    "precedents": [
+      {
+        "thread_id": 742283,
+        "customer_text": "#ios11update is taking the piss out of my battery. I am not upgrading it that\u2019s what @115858 are thinking. Charged my phone full 3 times 2day",
+        "clean_customer_text": "#ios11update is taking the piss out of my battery. I am not upgrading it that\u2019s what are thinking. Charged my phone full 3 times 2day",
+        "brand_reply": "@297501 We want to help. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 06 20:33:50 +0000 2017",
+        "similarity": 0.8029943108558655
+      },
+      {
+        "thread_id": 2036337,
+        "customer_text": "Watching my battery % drop... Jesus @115858. The battery issues since day ONE of iOS 11 are getting really tiresome... @123857 @116333",
+        "clean_customer_text": "Watching my battery % drop... Jesus . The battery issues since day ONE of iOS 11 are getting really tiresome...",
+        "brand_reply": "@602046 We know how important it is to have a reliable working battery. Meet us in DM and we can look into some options together. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Nov 06 21:03:22 +0000 2017",
+        "similarity": 0.7982816696166992
+      },
+      {
+        "thread_id": 716126,
+        "customer_text": "Dear @AppleSupport please help me with battery issue with iOS 11 ! 10.3.3 is better version I have ever seen with a good battery back up.",
+        "clean_customer_text": "Dear please help me with battery issue with iOS 11 ! 10.3.3 is better version I have ever seen with a good battery back up.",
+        "brand_reply": "@291366 We've got your back! Let's pair up in DM to get to the bottom of this. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 06 03:41:47 +0000 2017",
+        "similarity": 0.7789393663406372
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The inquiry is a common technical issue regarding battery health and software performance that can be addressed with standard diagnostic information.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 20,
+    "golden_intent": "battery_power_issue",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@267028 Got it. To get started from here, let's look into the battery usage on your iPhone. Go ahead and send us a DM so that we can continue working on this together. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.034
+  },
+  {
+    "customer_text": "@AppleSupport my iPhone has been charging for two hours and it won't turn on.",
+    "intent": "battery_power_issue",
+    "confidence": 0.98,
+    "intent_reasoning": "The device is failing to power on despite being connected to the charger.",
+    "draft_reply": "@customer We want to help get your iPhone working properly. Please send us a DM so we can look into this and assist you further. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7747241854667664,
+    "precedents": [
+      {
+        "thread_id": 236426,
+        "customer_text": "It's been 2 hours since the full charge and my #iphone6s battery already has 55% on #iOS11 . @115858 fix the system please.",
+        "clean_customer_text": "It's been 2 hours since the full charge and my #iphone6s battery already has 55% on #iOS11 . fix the system please.",
+        "brand_reply": "@172311 We know how important battery life is. We'd like to look into this. Click here to join us in DM: https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Oct 05 07:48:55 +0000 2017",
+        "similarity": 0.7747241854667664
+      },
+      {
+        "thread_id": 845890,
+        "customer_text": "@AppleSupport My iPhone updated over night and now it's not working and keeps switching itself off. What should I do?",
+        "clean_customer_text": "My iPhone updated over night and now it's not working and keeps switching itself off. What should I do?",
+        "brand_reply": "@321055 We want to help get your iPhone working properly.  Which iPhone?  Have you been able to restart it? https://t.co/OWRDHWSt4h",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 20 08:42:11 +0000 2017",
+        "similarity": 0.7528225779533386
+      },
+      {
+        "thread_id": 909826,
+        "customer_text": "@115858 great recent update, my Iphone dies midday and my extra @115858 battery case that I have had for a few months stopped working #wtf",
+        "clean_customer_text": "great recent update, my Iphone dies midday and my extra battery case that I have had for a few months stopped working #wtf",
+        "brand_reply": "@336106 Reach out to us via DM, then we can work together on making sure your battery is up to your expectations. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Oct 10 13:49:37 +0000 2017",
+        "similarity": 0.7526134252548218
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "This is a common power issue that can be addressed using standard diagnostic troubleshooting steps available in the knowledge base.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 26,
+    "golden_intent": "battery_power_issue",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@333741 You've come to the right place for assistance with your iPhone. What happens when you try to power it on? Are you seeing anything on the screen?",
+    "latency_seconds": 0.028
+  },
+  {
+    "customer_text": "@AppleSupport my phone keeps disconnecting from the wifi it\u2019s been happening for the past week what can I do to fix this? I\u2019ve already restarted the network? Or is it my phone @115714 ?",
+    "intent": "connectivity_network",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer reports persistent Wi-Fi disconnection issues with their phone.",
+    "draft_reply": "@customer We want to help get this resolved for you. Please send us a DM with more details so we can look into your Wi-Fi connection issue! https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7997962236404419,
+    "precedents": [
+      {
+        "thread_id": 822692,
+        "customer_text": "@AppleSupport @120026 @244902 #Ios11 why does my WiFi keep Turing Back On after I\u2019ve turn it completely off!?\nCome on Apple",
+        "clean_customer_text": "#Ios11 why does my WiFi keep Turing Back On after I\u2019ve turn it completely off!? Come on Apple",
+        "brand_reply": "@315969 We can go over some information to about that. Let's move over to DM so we can have a chat. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Oct 08 18:52:34 +0000 2017",
+        "similarity": 0.7997962236404419
+      },
+      {
+        "thread_id": 1413828,
+        "customer_text": "@AppleSupport Okay None of this is helping. I have connection, my phone is updated. I\u2019m getting frustrated",
+        "clean_customer_text": "Okay None of this is helping. I have connection, my phone is updated. I\u2019m getting frustrated",
+        "brand_reply": "@448571 We want to get this resolved as soon as possible. Please send us a DM to continue: https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Nov 02 02:06:58 +0000 2017",
+        "similarity": 0.7616979479789734
+      },
+      {
+        "thread_id": 2278746,
+        "customer_text": "@115858 CAN YOU GUYS PLEASE FIX THE UPDATE SO MY WIFI CAN STOP COMING ON BY ITSELF, PLEASE &amp; THANK YOI",
+        "clean_customer_text": "CAN YOU GUYS PLEASE FIX THE UPDATE SO MY WIFI CAN STOP COMING ON BY ITSELF, PLEASE &amp; THANK YOI",
+        "brand_reply": "@662553 We'd like to know more about what you are seeing. Could you join us in DM with more details? https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Oct 19 18:18:30 +0000 2017",
+        "similarity": 0.7598426342010498
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "This is a common technical connectivity issue (Wi-Fi dropping) that can likely be resolved using standard diagnostic steps available in the knowledge base.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 3,
+    "golden_intent": "connectivity_network",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@254349 Being able to connect to Wi-Fi is important. Let's ensure Wi-Fi is enabled in Settings &gt; Wi-Fi and connected to your preferred network. If you continue to have issues, please reach out to us here: https://t.co/IBIY3vMgPj",
+    "latency_seconds": 0.029
+  },
+  {
+    "customer_text": "@116333 @115858 Mac shuts down when put in Sleep, High Sierra bricked Mac, AirPods DO NOT connect automatically, Mac Messages not deleted via cloud, Calculator defaults to 172, Root vulnerabilities. Is this the new Apple quality? Or, is it just about the $ and investors now?",
+    "intent": "battery_power_issue",
+    "confidence": 0.5,
+    "intent_reasoning": "Parsed via fallback regex extractor.",
+    "draft_reply": "@customer We certainly want you to have",
+    "top_retrieval_similarity": 0.7785196900367737,
+    "precedents": [
+      {
+        "thread_id": 2284629,
+        "customer_text": "@663906 @663214 @115858 High Sierra is a disaster. My MacBook Pro locks up, doesn\u2019t wake from sleep, and has all kinds of bizarre bugs since \u201cupgrading.\u201d",
+        "clean_customer_text": "High Sierra is a disaster. My MacBook Pro locks up, doesn\u2019t wake from sleep, and has all kinds of bizarre bugs since \u201cupgrading.\u201d",
+        "brand_reply": "@351431 We certainly want you to have a better experience and we're happy to help. Please DM us about the issues you're experiencing and we'll continue there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Nov 11 06:36:42 +0000 2017",
+        "similarity": 0.7785196900367737
+      },
+      {
+        "thread_id": 1007606,
+        "customer_text": "congratulations @115858 \nyou\u2019ve turned my $1300 iphone into a useless pos. it freezes and lags regularly. #applefail",
+        "clean_customer_text": "congratulations you\u2019ve turned my $1300 iphone into a useless pos. it freezes and lags regularly. #applefail",
+        "brand_reply": "@358440 We want to help. Meet us in DM and we'll work towards a solution together. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Oct 14 09:15:52 +0000 2017",
+        "similarity": 0.7271523475646973
+      },
+      {
+        "thread_id": 2301946,
+        "customer_text": "Uh oh. My @AppleSupport @115858 laptop now routinely has trouble waking up from sleep mode. -_- Aaaaaaand it starts. #apple #MacBookPro",
+        "clean_customer_text": "Uh oh. My laptop now routinely has trouble waking up from sleep mode. -_- Aaaaaaand it starts. #apple #MacBookPro",
+        "brand_reply": "@554657 We'd love to take a look. Let's try safe mode since your Mac doesn\u2018t finish starting up: https://t.co/PQ4LSYhUTY https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 12 15:03:23 +0000 2017",
+        "similarity": 0.7266585230827332
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
+    "escalation_method": "low_confidence",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 13,
+    "golden_intent": "connectivity_network",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@117507 We'd like to take a closer look at this with you. Send us a DM and we'll continue there. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.048
+  },
+  {
+    "customer_text": "Disappointing service from @115858. Covent Garden \u201cgenius\u201d - rude, patronising and unhelpful. My location and WiFi can still not be found!",
+    "intent": "other_unclear",
+    "confidence": 0.5,
+    "intent_reasoning": "Parsed via fallback regex extractor.",
+    "draft_reply": "@customer That\u2019s not the experience we want you to have. We\u2019d like to take a closer look at this with you. Meet us in DM to proceed. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7179752588272095,
+    "precedents": [
+      {
+        "thread_id": 2129206,
+        "customer_text": "@115858 truly awful tech service from you tonight after spending a small fortune on new MacBook, cut of twice by operators when they could not resolve my problem with WiFi despite all other devices being able to connect",
+        "clean_customer_text": "truly awful tech service from you tonight after spending a small fortune on new MacBook, cut of twice by operators when they could not resolve my problem with WiFi despite all other devices being able to connect",
+        "brand_reply": "@626782 That\u2019s not the experience we want you to have. We\u2019d like to take a closer look at this with you. Meet us in DM to proceed. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Nov 08 18:27:06 +0000 2017",
+        "similarity": 0.7179752588272095
+      },
+      {
+        "thread_id": 2588750,
+        "customer_text": "@AppleSupport I\u2019m trying to cancel my Genius Bar appointment tomorrow but your system isn\u2019t working? https://t.co/3clT5poa7e",
+        "clean_customer_text": "I\u2019m trying to cancel my Genius Bar appointment tomorrow but your system isn\u2019t working?",
+        "brand_reply": "@733384 We can help! How was this appointment scheduled? Reply in DM to get started. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 30 18:30:53 +0000 2017",
+        "similarity": 0.692164957523346
+      },
+      {
+        "thread_id": 301584,
+        "customer_text": "@AppleSupport requested account recovery on 26th September... still waiting. Requested again today. Your service is shocking!",
+        "clean_customer_text": "requested account recovery on 26th September... still waiting. Requested again today. Your service is shocking!",
+        "brand_reply": "@187945 There may be a few options to help speed up recovery time. Check them out here: https://t.co/SnE0Z3ADUS",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 06 18:19:06 +0000 2017",
+        "similarity": 0.689860999584198
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
+    "escalation_method": "low_confidence",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 38,
+    "golden_intent": "connectivity_network",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@149309 Hi there. We'd like to look into this. DM us and tell us a bit more about what happened and we'll go from there. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.042
+  },
+  {
+    "customer_text": "why is wifi not automatically connecting when i come home? which location service do i need to enable? @AppleSupport",
+    "intent": "connectivity_network",
+    "confidence": 0.98,
+    "intent_reasoning": "Inquiry regarding Wi-Fi automatic reconnection failure and necessary location services settings.",
+    "draft_reply": "We know how important a stable connection is. To help troubleshoot why your Wi-Fi isn't auto-connecting, please send us a DM with details about the device you are using. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7592442035675049,
+    "precedents": [
+      {
+        "thread_id": 822692,
+        "customer_text": "@AppleSupport @120026 @244902 #Ios11 why does my WiFi keep Turing Back On after I\u2019ve turn it completely off!?\nCome on Apple",
+        "clean_customer_text": "#Ios11 why does my WiFi keep Turing Back On after I\u2019ve turn it completely off!? Come on Apple",
+        "brand_reply": "@315969 We can go over some information to about that. Let's move over to DM so we can have a chat. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Oct 08 18:52:34 +0000 2017",
+        "similarity": 0.7592442035675049
+      },
+      {
+        "thread_id": 2059539,
+        "customer_text": "@AppleSupport Updated to iOS 11.1 &amp; have no WiFi @ all. Reset everything &amp; still nothing",
+        "clean_customer_text": "Updated to iOS 11.1 &amp; have no WiFi @ all. Reset everything &amp; still nothing",
+        "brand_reply": "@609105 We know your Wi-Fi is important. Let's look into getting you reconnected. Send a DM telling us the device you're using. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Oct 19 00:34:47 +0000 2017",
+        "similarity": 0.7542845010757446
+      },
+      {
+        "thread_id": 1910244,
+        "customer_text": "Yet another #ios11bug @applesupport #appstore started to update apps, but it didn\u2019t finish all day on wifi :) https://t.co/yTtc5HPGcl",
+        "clean_customer_text": "Yet another #ios11bug #appstore started to update apps, but it didn\u2019t finish all day on wifi :)",
+        "brand_reply": "@334450 Let's look into this together. Send us a DM with the iOS version your iPhone is running, and we'll go from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Oct 24 21:35:40 +0000 2017",
+        "similarity": 0.7255823612213135
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "This is a common software configuration issue regarding Wi-Fi and location services that can be diagnosed and resolved using known technical steps.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 43,
+    "golden_intent": "connectivity_network",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@193129 It's important to have your device connecting to your network on its own. Let's look into this. Can you provide us which iOS is on your device? This can be located in Settings &gt; General &gt; About &gt; Version.",
+    "latency_seconds": 0.04
+  },
+  {
+    "customer_text": "on an iMac @AppleSupport when i move the mouse to the upper right of the screen why does everything disappear???",
+    "intent": "os_software_glitch",
+    "confidence": 0.5,
+    "intent_reasoning": "Parsed via fallback regex extractor.",
+    "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The user has an iMac and observes that \"everything disappears\" when moving the mouse to the upper right corner of the screen. The intent is an `os_software_glitch`.\n2.  **Analyze the Constraints:**\n    *   Role: Official Apple Support Agent (@AppleSupport).\n    *   Tone: Polite, empathetic, concise, technically accurate.\n    *   Format: Tweet (under 240 characters).\n    *   Crucial Rule: Ground response *strictly* in provided precedents. Do not invent details (serial numbers, refunds, etc.).\n3.  **Analyze the Precedents:**\n    *   [Precedent 1 (0.72)]: iMac, mouse issue -> DM for detailed look.\n    *   [Precedent 2 (0.71)]: iMac, monitor/mouse issue after OS install -> Provided troubleshooting article link.\n    *   [Precedent 3 (0.67)]: Apps disappearing/reappearing -> Suggested App Store updates and specific iOS version update (11.1.1) + backup link.\n4.  **Determine the Best Fit/Action:** The user's issue (\"everything disappears\" when moving mouse to upper right) is a classic display/OS boundary issue, similar in scope to the issues described in Precedent 2 (monitor/mouse movement after OS change) or potentially a display setting issue.\n5.  **Select the Strategy:** Since the description is vague (\"everything disappears\"), the most helpful and safest approach, mirroring Precedent 1 (which handles specific hardware/software issues needing deeper investigation) or Precedent 2 (providing a troubleshooting resource), is needed. Given the ambiguity, starting with gathering more information or directing them to resources is safest.\n6.  **Drafting - Attempt 1 (Focus on gathering info, like Precedent 1):**\n    *   *Draft:* We understand this must be frustrating. Could you tell us the specific model of your iMac? DM us, and we can look into this disappearing screen issue together.\n    *   *(Check constraints: Polite, concise, accurate. Fits the spirit of Precedent 1.)*\n7.  **Refining and Selecting (Matching the most likely successful pattern):** Precedent 1 is the cleanest match for an initial, specific hardware/software glitch report.\n\n8.  **Final Polish (Tweet format):** Ensure it is empathetic and directs the next step clearly.\n\n*(Self-Correction: While Precedent 2 provides a link, the current issue might not be related to an OS update causing the glitch. Precedent 1 is a safer initial response for a vague, critical bug report.)*\n\n9.  **Final Output Generation.** (Using the structure of Precedent 1 for maximum safety and adherence to",
+    "top_retrieval_similarity": 0.7244168519973755,
+    "precedents": [
+      {
+        "thread_id": 643272,
+        "customer_text": "@AppleSupport Hello - I have an iMac and the mouse model no. is A1152",
+        "clean_customer_text": "Hello - I have an iMac and the mouse model no. is A1152",
+        "brand_reply": "@272721 We appreciate you sharing that with us. DM us, and we'll take a closer look at the issue together there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 23 23:11:30 +0000 2017",
+        "similarity": 0.7244168519973755
+      },
+      {
+        "thread_id": 2346059,
+        "customer_text": "@AppleSupport Thanks! Monitor working fine yesterday until I installed High Sierra. Now I can move my mouse on to it but cannot move across windows",
+        "clean_customer_text": "Thanks! Monitor working fine yesterday until I installed High Sierra. Now I can move my mouse on to it but cannot move across windows",
+        "brand_reply": "@678378 Thank you for those details. Let's have you check out this article with some steps to help with this: https://t.co/I0Su2HDKaz",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Nov 14 07:42:12 +0000 2017",
+        "similarity": 0.7113832235336304
+      },
+      {
+        "thread_id": 2299809,
+        "customer_text": "@AppleSupport Apps often disappear also when swiping through the home screen, but reappear when i go back.",
+        "clean_customer_text": "Apps often disappear also when swiping through the home screen, but reappear when i go back.",
+        "brand_reply": "@667507 Got it. Have you checked for app updates in the App Store? Also, we'd recommend creating a backup of your data, then updating to the latest iOS version, 11.1.1. This link helps with this: https://t.co/80YRnjDFDk",
+        "has_followup": true,
+        "followup_text": "@AppleSupport Thanks for the reply.  I did what you said, but it hasn\u2019t fixed the problem.  Most of my apps still freeze when trying to use them.",
+        "created_at": "Sun Nov 12 16:52:06 +0000 2017",
+        "similarity": 0.6730995178222656
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
+    "escalation_method": "low_confidence",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 14,
+    "golden_intent": "hardware_screen_audio",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@249906 We'd like to look into this together. To get started, let us know how long you've been experiencing this? Does it happen in multiple user accounts?",
+    "latency_seconds": 0.024
+  },
+  {
+    "customer_text": "Halo. @AppleSupport it's stuck on this screen no matter how many times I click anything so I can't turn it off to fix it \ud83e\udd14 https://t.co/4YyjgRAoC2",
+    "intent": "os_software_glitch",
+    "confidence": 0.98,
+    "intent_reasoning": "The device is unresponsive and stuck on a screen, indicating a severe software freeze or boot loop.",
+    "draft_reply": "@customer We're here to help. Since your device is stuck on the screen, please try this guide first: [Insert relevant troubleshooting link]. Let's meet in DM to continue.",
+    "top_retrieval_similarity": 0.7313650846481323,
+    "precedents": [
+      {
+        "thread_id": 2303441,
+        "customer_text": "@115858 you need to fix this keyboard issue. I\ufe0ft is really starting to piss me off. I\ufe0f can\u2019t take the A? Anymore. #applefail",
+        "clean_customer_text": "you need to fix this keyboard issue. I\ufe0ft is really starting to piss me off. I\ufe0f can\u2019t take the A? Anymore. #applefail",
+        "brand_reply": "@668386 We can help. Have you installed iOS 11.1.1 yet? If not, we recommend making a backup and updating from Settings &gt; General &gt; About: https://t.co/ui8Itz8ESg DM us if you find the issue persists. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 12 17:00:35 +0000 2017",
+        "similarity": 0.7313650846481323
+      },
+      {
+        "thread_id": 2309075,
+        "customer_text": "@115858 I have no idea how to install apps on the #iphonex! You come up with a bouncy statement about double click to install. #uxfail",
+        "clean_customer_text": "I have no idea how to install apps on the #iphonex! You come up with a bouncy statement about double click to install. #uxfail",
+        "brand_reply": "@669747 We'd like to help. Tell us a little more about the issues you are experiencing when you try to install apps on your iPhone X.",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Nov 13 02:09:19 +0000 2017",
+        "similarity": 0.716235876083374
+      },
+      {
+        "thread_id": 961740,
+        "customer_text": "@AppleSupport my iPhone 7+ stuck on the apple screen. I cant answer a call and I reset it and nothing now. Wife\u2019s 6+ having issues as well",
+        "clean_customer_text": "my iPhone 7+ stuck on the apple screen. I cant answer a call and I reset it and nothing now. Wife\u2019s 6+ having issues as well",
+        "brand_reply": "@348213 We're here to help. Use this guide first: https://t.co/8MvHMFZ83h Let's meet in DM to continue. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Oct 22 00:38:20 +0000 2017",
+        "similarity": 0.7126947045326233
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The issue is a common operating system software glitch (stuck screen) that can likely be resolved using standard diagnostic steps like forced restarts, which the AI assistant is equipped to provide.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 22,
+    "golden_intent": "hardware_screen_audio",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@136629 Hey there, let's try force restarting your iPhone to see if anything changes. This link should help: https://t.co/8MvHMFZ83h",
+    "latency_seconds": 0.033
+  },
+  {
+    "customer_text": "@AppleSupport Nope, definitely not my microphone.",
+    "intent": "hardware_screen_audio",
+    "confidence": 0.75,
+    "intent_reasoning": "The customer is responding to a query regarding the microphone functionality of their device.",
+    "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The user is a customer (@AppleSupport) stating, \"Nope, definitely not my microphone.\" The detected intent is `hardware_screen_audio`. I need to provide a polite, empathetic, concise, and technically accurate reply fitting the persona of @AppleSupport on Twitter.\n2.  **Analyze Constraints & Persona:**\n    *   Role: Official Apple Support (@AppleSupport).\n    *   Tone: Polite, empathetic, concise.\n    *   Constraint 1: Must be under 240 characters (Twitter limit).\n    *   Constraint 2: Do not invent details (serial numbers, refunds, etc.).\n    *   Constraint 3: Ground response strictly in provided precedents.\n3.  **Analyze the Customer's Message:** The customer is responding to a previous troubleshooting step (likely related to microphone/audio issues) and denying the fault lies with their device. They are still in the middle of a troubleshooting thread.\n4.  **Analyze Precedents for Guidance:**\n    *   [Precedent 1]: Checks system status/if the issue persists. (Good for general checks).\n    *   [Precedent 2]: Acknowledges resolution after a simple fix (restart). (Good for closing the loop positively).\n    *   [Precedent 3]: Asks clarifying questions to narrow down the issue (e.g., \"Does it work normally when pressing the home button?\").\n5.  **Determine the Best Course of Action:** Since the customer is responding to a previous question and seems stuck in troubleshooting, I need to move the diagnosis forward. The most helpful action is usually asking for more specific details about *what* they are experiencing or trying to confirm the scope of the problem. Precedent 3's approach (asking a clarifying question) is most applicable here, as the issue remains undefined.\n6.  **Drafting - Attempt 1 (Focus on clarification):** To help us understand the issue better, could you describe what you are trying to do when you encounter this problem? (A bit generic).\n7.  **Drafting - Attempt 2 (Focus on the hardware/software interaction):** Are you experiencing this issue during a specific activity, like recording or making a call? (More focused).\n8.  **Refining and Selecting the Final Reply:** Given the ambiguity of \"Nope, definitely not my microphone,\" I need to prompt them for context. A polite acknowledgment followed by a request for more detail is safest and most helpful.\n\n*(Self-Correction: Since the customer has already denied it's their microphone, I should acknowledge that and pivot back to the specific context of the problem.)*\n\n**Final Check:** The reply must be concise, polite, and move the troubleshooting process forward.\n\n*(Selecting a response that invites them to provide",
+    "top_retrieval_similarity": 0.7312971353530884,
+    "precedents": [
+      {
+        "thread_id": 1329984,
+        "customer_text": "@AppleSupport did you get any issues with #AppleMusic recently? https://t.co/Yp0e83kB58",
+        "clean_customer_text": "did you get any issues with #AppleMusic recently?",
+        "brand_reply": "@242836 Our System Status website shows all is working. Are you continuing to have the same issues? https://t.co/7NVrDovSd8",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 03:47:27 +0000 2017",
+        "similarity": 0.7312971353530884
+      },
+      {
+        "thread_id": 2438485,
+        "customer_text": "@AppleSupport You know what?! Why I didn\u2019t restart the iphone before tweeting that is beyond me. Seem to be OK now. Thank you!",
+        "clean_customer_text": "You know what?! Why I didn\u2019t restart the iphone before tweeting that is beyond me. Seem to be OK now. Thank you!",
+        "brand_reply": "@699438 No worries at all. We're glad to know things are working properly. If there is anything we can do to assist you in the future, please don't hesitate to reach back out.",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Nov 14 22:32:20 +0000 2017",
+        "similarity": 0.6989129781723022
+      },
+      {
+        "thread_id": 1470701,
+        "customer_text": "\"Hey Siri\" works less than 10% of the time on latest iOS on latest iPhone hardware. I've set it up 4 times. @115858 iOS QA is garbage",
+        "clean_customer_text": "\"Hey Siri\" works less than 10% of the time on latest iOS on latest iPhone hardware. I've set it up 4 times. iOS QA is garbage",
+        "brand_reply": "@461365 We'd be happy to look at this with you. Does it work normally when pressing the home button?",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 16 20:26:24 +0000 2017",
+        "similarity": 0.698517382144928
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The inquiry relates to a technical audio issue and can likely be addressed by continuing the guided troubleshooting process via AI.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 31,
+    "golden_intent": "hardware_screen_audio",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@148437 Thanks for trying. Just to verify, what's the exact iOS version listed in your settings? You can check by navigating to Settings &gt; General &gt; About: https://t.co/ZTw54HL4Rm",
+    "latency_seconds": 0.024
+  },
+  {
+    "customer_text": "@AppleSupport it just closes unexpectedly, like i\ufe0f hit the home button. but i\ufe0f don\u2019t hit the home button.",
+    "intent": "os_software_glitch",
+    "confidence": 0.95,
+    "intent_reasoning": "The user is experiencing an application or system unexpectedly closing/crashing.",
+    "draft_reply": "@customer Thanks for following up. To help us understand what's happening with the unexpected closures, please send us a DM with some additional details about your device and when this occurs. We'll help you there.",
+    "top_retrieval_similarity": 0.7266945838928223,
+    "precedents": [
+      {
+        "thread_id": 2438485,
+        "customer_text": "@AppleSupport You know what?! Why I didn\u2019t restart the iphone before tweeting that is beyond me. Seem to be OK now. Thank you!",
+        "clean_customer_text": "You know what?! Why I didn\u2019t restart the iphone before tweeting that is beyond me. Seem to be OK now. Thank you!",
+        "brand_reply": "@699438 No worries at all. We're glad to know things are working properly. If there is anything we can do to assist you in the future, please don't hesitate to reach back out.",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Nov 14 22:32:20 +0000 2017",
+        "similarity": 0.7266945838928223
+      },
+      {
+        "thread_id": 2179346,
+        "customer_text": "@AppleSupport The home button no longer seems to be working at all",
+        "clean_customer_text": "The home button no longer seems to be working at all",
+        "brand_reply": "@282032 Thanks for following up. Send us a DM with some additional details, and we'll help you there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Oct 19 17:06:22 +0000 2017",
+        "similarity": 0.7170732021331787
+      },
+      {
+        "thread_id": 1329984,
+        "customer_text": "@AppleSupport did you get any issues with #AppleMusic recently? https://t.co/Yp0e83kB58",
+        "clean_customer_text": "did you get any issues with #AppleMusic recently?",
+        "brand_reply": "@242836 Our System Status website shows all is working. Are you continuing to have the same issues? https://t.co/7NVrDovSd8",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 03:47:27 +0000 2017",
+        "similarity": 0.701926589012146
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The issue is a common operating system software glitch that can likely be resolved through guided troubleshooting steps provided by the AI assistant.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 32,
+    "golden_intent": "hardware_screen_audio",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Standard troubleshooting guide and diagnostic triage questions apply.",
+    "actual_brand_reply": "@267193 Thanks for confirming. Since the issue first began, has your iPhone been restarted? Also, what version of iOS is running on it? You can find the version number in Settings &gt; General &gt; About. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.044
+  },
+  {
+    "customer_text": "Dear @115858, I have an online order which I never received - who can I talk to?",
+    "intent": "orders_repairs_store",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer is inquiring about the status and non-receipt of an online order.",
+    "draft_reply": "We understand your concern about your order. For questions regarding the status of your online purchase, please reach out to our Apple Online Store support team for assistance.",
+    "top_retrieval_similarity": 0.7282334566116333,
+    "precedents": [
+      {
+        "thread_id": 1338132,
+        "customer_text": "Not sure if my #IphoneXPreOrder went through on @115858 BUT I haven't gotten an email NOR does my order history show anything. #Nervous! \ud83d\ude44 https://t.co/ONN083FTdI",
+        "clean_customer_text": "Not sure if my #IphoneXPreOrder went through on BUT I haven't gotten an email NOR does my order history show anything. #Nervous! \ud83d\ude44",
+        "brand_reply": "@432117 For questions about your order, reach out to our awesome Apple Online Store support team: https://t.co/8yjRd1Xo0i",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 08:18:23 +0000 2017",
+        "similarity": 0.7282334566116333
+      },
+      {
+        "thread_id": 1093362,
+        "customer_text": "@AppleSupport pls contact me about this asap",
+        "clean_customer_text": "pls contact me about this asap",
+        "brand_reply": "@378034 Let's see how we can help. DM us with more details please. We'll continue working together there. https://t.co/GDrqU2kzhr",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 23 20:45:59 +0000 2017",
+        "similarity": 0.7064393758773804
+      },
+      {
+        "thread_id": 2571373,
+        "customer_text": "@AppleSupport hi I have a replacement order for EarPods at a certain store and need to check the status of it. Can someone help?? Thanks!",
+        "clean_customer_text": "hi I have a replacement order for EarPods at a certain store and need to check the status of it. Can someone help?? Thanks!",
+        "brand_reply": "@297631 DM us using the link below. We'll check things from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 30 17:39:01 +0000 2017",
+        "similarity": 0.7054667472839355
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The inquiry concerns a missing physical order and requires account authentication to investigate shipping status, address details, or billing disputes.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 6,
+    "golden_intent": "orders_repairs_store",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@117481 We want to help out. Look here to talk with our Online Support:  https://t.co/8yjRd1Xo0i",
+    "latency_seconds": 0.044
+  },
+  {
+    "customer_text": "@AppleSupport I won\u2019t be buying X at Apple store. Ordered from Verizon. Who can assist with setup - Apple or Verizon? I\u2019m going to bring old iPhone to Apple to trade in for Apple credit so while I\u2019m there, was hoping Apple could assist with setup. I\u2019m buying Apple care while there as well.",
+    "intent": "orders_repairs_store",
+    "confidence": 0.95,
+    "intent_reasoning": "The customer is inquiring about in-store services including trade-in and purchasing AppleCare.",
+    "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The customer bought a phone (X) from Verizon but is going to Apple for trade-in, setup assistance, and buying AppleCare. They are asking who assists with setup (Apple or Verizon).\n2.  **Analyze the Constraints:**\n    *   Role: Official Apple Support (@AppleSupport).\n    *   Tone: Polite, empathetic, concise, technically accurate.\n    *   Constraint 1: Do not invent details (serial numbers, amounts, policies).\n    *   Constraint 2: Ground strictly in provided precedents.\n    *   Constraint 3: Concise (under 240 characters/tweet length).\n3.  **Analyze the Precedents:** All precedents direct sales/program questions (upgrades, unlocking, specific purchase details) to a dedicated Sales Team or Online Store link. They do not address carrier-specific setup issues directly, but they *do* offer help/resolution pathways.\n4.  **Determine the Core Issue:** The customer needs setup assistance for a device purchased through Verizon, but they are coming to Apple.\n5.  **Synthesize the Answer based on Precedents/Policy:** While setup assistance is often available in-store, sales and carrier integration questions (like \"who assists with setup?\") are best directed to the appropriate team. The precedents consistently point towards directing complex sales/program questions to a specific channel (the Sales Team link).\n6.  **Drafting the Reply (Focusing on helpfulness while maintaining boundaries):** The customer is asking for help with a transaction/setup that involves both Apple and Verizon. Since the precedents guide complex sales issues to the Sales Team, I must use that structure.\n\n    *Draft 1 (Internal Check):* We can certainly help with your trade-in and AppleCare purchase. For setup specific to your Verizon order, please contact our Sales Team here: [Link]. (Too long/might sound like I'm passing the buck entirely).\n\n    *Refining for Conciseness & Tone:* Acknowledge their visit and direct the complex sales/program questions (like setup integration) to the specialized team.\n\n7.  **Final Polish (Applying constraints):** The precedents use a specific link for sales/program help. I must mimic this structure while addressing the customer's multifaceted visit (Trade-in, Setup, Care).\n\n    *Final Selection:* Directing them to the Sales Team link is the safest and most consistent action based on the provided precedents for complex sales scenarios.\n\n    *(Self-Correction: Since the customer is visiting in person, I should acknowledge that we can help with the Apple parts of their visit (Trade-in/Care) while directing the carrier integration questions to the appropriate channel.)*\n\n    Let's use a general helpful response that mirrors the precedents' tone of directing complex issues to",
+    "top_retrieval_similarity": 0.7202084064483643,
+    "precedents": [
+      {
+        "thread_id": 1335210,
+        "customer_text": "@AppleSupport When can I order an unlocked iPhone X in the US? I tried to pre-order tonight and only see options for locked versions.",
+        "clean_customer_text": "When can I order an unlocked iPhone X in the US? I tried to pre-order tonight and only see options for locked versions.",
+        "brand_reply": "@431466 Great question! Our Online Store team is best suited to help you. You can reach them here:  https://t.co/8yjRd1Xo0i",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 07:15:27 +0000 2017",
+        "similarity": 0.7202084064483643
+      },
+      {
+        "thread_id": 1071246,
+        "customer_text": "@AppleSupport hi there would it be possible for someone to DM me regarding the iPhone Upgrade Programme and the iPhone X? Thanks",
+        "clean_customer_text": "hi there would it be possible for someone to DM me regarding the iPhone Upgrade Programme and the iPhone X? Thanks",
+        "brand_reply": "@307846 For help with the iPhone Upgrade program, please contact our Sales Team here: https://t.co/8yjRd1Xo0i",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 23 15:51:06 +0000 2017",
+        "similarity": 0.7042642831802368
+      },
+      {
+        "thread_id": 1935759,
+        "customer_text": "@115858 is forcing me to buy a new phone for something THEY fucked up on... good to know you care so much about ur customers #Pricks \ud83d\udc4d\ud83c\udffc",
+        "clean_customer_text": "is forcing me to buy a new phone for something THEY fucked up on... good to know you care so much about ur customers #Pricks \ud83d\udc4d\ud83c\udffc",
+        "brand_reply": "@575880 If you're having trouble with your iPhone, we're committed to work with you to get it resolved. Let's work on a solution in DM https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 18:23:50 +0000 2017",
+        "similarity": 0.7019610404968262
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The inquiry involves complex transactional logistics regarding setup assistance between the carrier (Verizon) and Apple, requiring human judgment to provide accurate guidance.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 18,
+    "golden_intent": "orders_repairs_store",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@781289 Sorry for the confusion. Let's meet up in DM to go over all our options. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.056
+  },
+  {
+    "customer_text": "@AppleSupport help my EarPods doesn\u2019t work like the right one doesn\u2019t make any sound idkw I\u2019ve bought them less than one month can i go to the apple store in France to change them??",
+    "intent": "hardware_screen_audio",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer reports a physical defect in the EarPods audio hardware and seeks service/replacement.",
+    "draft_reply": "@customer We're sorry to hear about your EarPods. We'd be happy to help you with options for replacement or service in France. Please send us a DM to get started! https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7429022192955017,
+    "precedents": [
+      {
+        "thread_id": 1818061,
+        "customer_text": "After a terrible delivery experience with @115858 , I am so disappointed with the sound of my #airpods ...Can I return them @AppleSupport ?",
+        "clean_customer_text": "After a terrible delivery experience with , I am so disappointed with the sound of my #airpods ...Can I return them ?",
+        "brand_reply": "@216748 We'd be happy to help with your AirPods or review return options. DM us your country of residence to get started. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 16 08:37:13 +0000 2017",
+        "similarity": 0.7429022192955017
+      },
+      {
+        "thread_id": 2571373,
+        "customer_text": "@AppleSupport hi I have a replacement order for EarPods at a certain store and need to check the status of it. Can someone help?? Thanks!",
+        "clean_customer_text": "hi I have a replacement order for EarPods at a certain store and need to check the status of it. Can someone help?? Thanks!",
+        "brand_reply": "@297631 DM us using the link below. We'll check things from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 30 17:39:01 +0000 2017",
+        "similarity": 0.7390962243080139
+      },
+      {
+        "thread_id": 2113883,
+        "customer_text": "@AppleSupport please let me know when you plan to fix these system wide issues with #iPhoneX :1) AirPods won\u2019t work 2) calls go to VM",
+        "clean_customer_text": "please let me know when you plan to fix these system wide issues with #iPhoneX :1) AirPods won\u2019t work 2) calls go to VM",
+        "brand_reply": "@623257 We'd be happy to help you fix your issues today. Send us a DM to get started. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Nov 08 14:59:14 +0000 2017",
+        "similarity": 0.7115478515625
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "Standard inquiry eligible for auto-reply.",
+    "escalation_method": "default_fallback",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 23,
+    "golden_intent": "orders_repairs_store",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@258981 We want to help! Join us in DM and we'll take a look at what options might be available to you: https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.035
+  },
+  {
+    "customer_text": "@AppleSupport I went to your store to get my computer checked a few days ago to realize they never gave me back my power cord and I want to die the store is very far from me I don't know what to do",
+    "intent": "orders_repairs_store",
+    "confidence": 0.9,
+    "intent_reasoning": "The customer is complaining about a missing item following a service visit to the Apple Store.",
+    "draft_reply": "@customer I'm so sorry to hear you didn't get your power cord back. That must be frustrating, especially since the store is far away. Please DM us with details about your visit so we can see how to resolve this for you.",
+    "top_retrieval_similarity": 0.7537251710891724,
+    "precedents": [
+      {
+        "thread_id": 2297617,
+        "customer_text": "@AppleSupport hey Apple. I sent my laptop out a week ago from my local Apple store to get fixed &amp; I got it back today with the receipt showing everything you guys fixed. I\ufe0f got told it\u2019s perfectly fine &amp; back to normal. Got home,&amp; My laptop is still broken &amp; won\u2019t turn on at all",
+        "clean_customer_text": "hey Apple. I sent my laptop out a week ago from my local Apple store to get fixed &amp; I got it back today with the receipt showing everything you guys fixed. I\ufe0f got told it\u2019s perfectly fine &amp; back to normal. Got home,&amp; My laptop is still broken &amp; won\u2019t turn on at all",
+        "brand_reply": "@666993 Thanks for reaching out. We're going to want to get you back to the Apple Store ASAP. Would you like some help making an appointment?",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 12 04:36:37 +0000 2017",
+        "similarity": 0.7537251710891724
+      },
+      {
+        "thread_id": 1086779,
+        "customer_text": "@AppleSupport Apple Store mgr called me. Thank you anyways",
+        "clean_customer_text": "Apple Store mgr called me. Thank you anyways",
+        "brand_reply": "@376345 You're welcome. If you have any other questions or need more help. Feel free to reach out to us. We're here to help.",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Oct 15 18:19:52 +0000 2017",
+        "similarity": 0.7338269352912903
+      },
+      {
+        "thread_id": 1942154,
+        "customer_text": "Hey @120640 how about you have your \u201cgeniuses\u201d care about figuring out why my battery is crap before you plant a \ud83c\udf32 in store? #dumb",
+        "clean_customer_text": "Hey how about you have your \u201cgeniuses\u201d care about figuring out why my battery is crap before you plant a \ud83c\udf32 in store? #dumb",
+        "brand_reply": "@577519 We're happy to look into your battery issues.  DM us with your iOS device model and version.  We'll go from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Oct 29 23:51:45 +0000 2017",
+        "similarity": 0.7306589484214783
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The inquiry involves a service fulfillment error (missing item after repair) combined with the customer expressing deep frustration, requiring human intervention.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 24,
+    "golden_intent": "orders_repairs_store",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@149295 Hey there! We'd love to see what we can do. DM us which country you're in and we'll get started. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.034
+  },
+  {
+    "customer_text": "@116333 @AppleSupport @115858 AGAIN can you please tell me why the hell the new update has changed the spelling of the I\u2019s ? This is my third time calling apple and tweeting and they said the new update would be sent to my phone! I\ufe0f didn\u2019t spend 1000 on this phone to look like",
+    "intent": "os_software_glitch",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer reports a specific functional bug introduced by the latest software update.",
+    "draft_reply": "We understand how frustrating this must be. It sounds like you've encountered a software glitch with the new update. \ud83d\ude14\n\nPlease DM us and tell us the exact version of iOS you're running so we can look into this for you. \ud83c\udf4e",
+    "top_retrieval_similarity": 0.8173707127571106,
+    "precedents": [
+      {
+        "thread_id": 978735,
+        "customer_text": "@115858 \ud83c\udf4e I\u2019ve updated my phone and this \u201cl\u201d remains on my \ud83d\udcf2! #iphone #glitch #apple",
+        "clean_customer_text": "\ud83c\udf4e I\u2019ve updated my phone and this \u201cl\u201d remains on my \ud83d\udcf2! #iphone #glitch #apple",
+        "brand_reply": "@352119 Thanks for reaching out. We have a workaround for this here: https://t.co/xXaXeeSRt9 \n\nDM us if you still need help. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 05 13:47:45 +0000 2017",
+        "similarity": 0.8173707127571106
+      },
+      {
+        "thread_id": 2198639,
+        "customer_text": "@AppleSupport why is the letter I\ufe0f a ? With a box around it in my snap and twitter? I\ufe0f thought updates were supposed to improve the iPhone..",
+        "clean_customer_text": "why is the letter I\ufe0f a ? With a box around it in my snap and twitter? I\ufe0f thought updates were supposed to improve the iPhone..",
+        "brand_reply": "@643101 Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 05 22:02:32 +0000 2017",
+        "similarity": 0.8148382902145386
+      },
+      {
+        "thread_id": 1988244,
+        "customer_text": "I\ufe0f get it @115858, you want me to upgrade to the latest update. That\u2019s why the letter \u201cI\ufe0f\u201d on my phone isn\u2019t working properly",
+        "clean_customer_text": "I\ufe0f get it , you want me to upgrade to the latest update. That\u2019s why the letter \u201cI\ufe0f\u201d on my phone isn\u2019t working properly",
+        "brand_reply": "@588466 Hey there. We'd like to look into this. DM us and tell us the exact version of iOS you're currently running on your device. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Nov 02 03:59:04 +0000 2017",
+        "similarity": 0.8061095476150513
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The customer is expressing deep frustration due to multiple failed support attempts and requires human intervention for de-escalation and personalized resolution regarding the software bug.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 4,
+    "golden_intent": "os_software_glitch",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@265804 We\u2019re here to help. Please DM us the software version you\u2019re using so we can better assist you. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.029
+  },
+  {
+    "customer_text": "LAWD @AppleSupport y\u2019all got another glitch. I.T. when I type \u201cit\u201d",
+    "intent": "os_software_glitch",
+    "confidence": 0.98,
+    "intent_reasoning": "The user is reporting a software glitch related to keyboard input or autocorrect behavior.",
+    "draft_reply": "Thanks for reaching out! We've got your back. Try these steps and let us know how it goes: [Insert relevant troubleshooting link here]",
+    "top_retrieval_similarity": 0.8370524644851685,
+    "precedents": [
+      {
+        "thread_id": 1596687,
+        "customer_text": "@115858 y\u2019all need to fix this little bug every time I type in the letter I",
+        "clean_customer_text": "y\u2019all need to fix this little bug every time I type in the letter I",
+        "brand_reply": "@490520 Thanks for reaching out! We've got your back. Try these steps and let us know how it goes: https://t.co/xU1AGHStV6",
+        "has_followup": true,
+        "followup_text": "@AppleSupport I appreciate the fast response and it indeed worked.",
+        "created_at": "Sat Nov 04 18:36:00 +0000 2017",
+        "similarity": 0.8370524644851685
+      },
+      {
+        "thread_id": 1574353,
+        "customer_text": "What\u2019s up with my iPhone??\nEverytime I\ufe0f try typing \u201cI\ufe0f\u201d it types this \ud83d\ude24 @115858 @AppleSupport https://t.co/BT3t3zcNmP",
+        "clean_customer_text": "What\u2019s up with my iPhone?? Everytime I\ufe0f try typing \u201cI\ufe0f\u201d it types this \ud83d\ude24",
+        "brand_reply": "@485198 Check out this resource. If you type the letter \u201ci\u201d &amp; it autocorrects to an \u201cA\u201d with a symbol: https://t.co/xXaXeeSRt9",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Nov 04 04:40:18 +0000 2017",
+        "similarity": 0.8205277919769287
+      },
+      {
+        "thread_id": 1773245,
+        "customer_text": "Idk what this shit going on with the \u201cI\ufe0f\u201d on keyboard but I\u2019m about to smash my fucking iPhone if it\u2019s not fixed by tomorrow @115858",
+        "clean_customer_text": "Idk what this shit going on with the \u201cI\ufe0f\u201d on keyboard but I\u2019m about to smash my fucking iPhone if it\u2019s not fixed by tomorrow",
+        "brand_reply": "@532948 Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+        "has_followup": true,
+        "followup_text": "@AppleSupport Thank you so much!",
+        "created_at": "Wed Nov 08 00:00:09 +0000 2017",
+        "similarity": 0.8133564591407776
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "Standard inquiry eligible for auto-reply.",
+    "escalation_method": "default_fallback",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 8,
+    "golden_intent": "os_software_glitch",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@299278 We want to be sure your keyboard types what you'd expect it to. We can help! Can you tell us which device you're using? \nWhich macOS or iOS are you running currently?",
+    "latency_seconds": 0.023
+  },
+  {
+    "customer_text": "@AppleSupport I have the iPhone 7 with the recent update my phone turned off like 8 times and the screen glitches and closes apps while I'm still using them .",
+    "intent": "os_software_glitch",
+    "confidence": 0.98,
+    "intent_reasoning": "The user reports multiple shutdowns and screen glitches following a recent software update.",
+    "draft_reply": "@customer We're sorry to hear your iPhone 7 is experiencing these issues after the update. Please send us a DM so we can help troubleshoot and assist you further!",
+    "top_retrieval_similarity": 0.7831559181213379,
+    "precedents": [
+      {
+        "thread_id": 1085254,
+        "customer_text": "LOL! Ever since I updated my \ud83d\udcf1 I get a black screen about 80% of the time I open my messages. What a joke @AppleSupport https://t.co/ZABq2GsItI",
+        "clean_customer_text": "LOL! Ever since I updated my \ud83d\udcf1 I get a black screen about 80% of the time I open my messages. What a joke",
+        "brand_reply": "@375995 We'd be happy to help. Send us a DM and we can start there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 23 17:42:35 +0000 2017",
+        "similarity": 0.7831559181213379
+      },
+      {
+        "thread_id": 961740,
+        "customer_text": "@AppleSupport my iPhone 7+ stuck on the apple screen. I cant answer a call and I reset it and nothing now. Wife\u2019s 6+ having issues as well",
+        "clean_customer_text": "my iPhone 7+ stuck on the apple screen. I cant answer a call and I reset it and nothing now. Wife\u2019s 6+ having issues as well",
+        "brand_reply": "@348213 We're here to help. Use this guide first: https://t.co/8MvHMFZ83h Let's meet in DM to continue. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Oct 22 00:38:20 +0000 2017",
+        "similarity": 0.7827017307281494
+      },
+      {
+        "thread_id": 1887020,
+        "customer_text": "@AppleSupport Getting sick to death of this new IOS update. My phone keeps crashing when I go on apps and I can\u2019t do anything about it \ud83d\ude21\ud83d\ude21\ud83d\ude21",
+        "clean_customer_text": "Getting sick to death of this new IOS update. My phone keeps crashing when I go on apps and I can\u2019t do anything about it \ud83d\ude21\ud83d\ude21\ud83d\ude21",
+        "brand_reply": "@562811 We're here to help. DM us and let us know if this only occurs with certain apps &amp; which iOS 11 version is installed. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Oct 23 08:59:34 +0000 2017",
+        "similarity": 0.7823268175125122
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The issue is a common OS software glitch following an update and can be addressed with initial diagnostic troubleshooting steps.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 15,
+    "golden_intent": "os_software_glitch",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@761386 What version of software did you first notice the behavior?",
+    "latency_seconds": 0.024
+  },
+  {
+    "customer_text": "@AppleSupport I've got the iPhone 6s and want to install the latest update but I'm concerned I'd have to connect it to a laptop to complete the update, but I do not have one anymore, pls assist?",
+    "intent": "os_software_glitch",
+    "confidence": 0.95,
+    "intent_reasoning": "User is seeking assistance regarding the process of installing a major operating system update.",
+    "draft_reply": "@customer We'd be happy to help you with your update question! Please send us a DM and we can look into this for you. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.747136116027832,
+    "precedents": [
+      {
+        "thread_id": 1245459,
+        "customer_text": "@AppleSupport The newest version , I have an iPhone 6s Plus",
+        "clean_customer_text": "The newest version , I have an iPhone 6s Plus",
+        "brand_reply": "@365760 Let's dig further into this via DM. We'll continue there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Oct 26 00:43:29 +0000 2017",
+        "similarity": 0.747136116027832
+      },
+      {
+        "thread_id": 740616,
+        "customer_text": "Hey @AppleSupport can you message me I have a question about updating my IOS",
+        "clean_customer_text": "Hey can you message me I have a question about updating my IOS",
+        "brand_reply": "@297128 We'd be happy to answer! Send us a DM using this link: https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 06 19:39:13 +0000 2017",
+        "similarity": 0.7316739559173584
+      },
+      {
+        "thread_id": 1194025,
+        "customer_text": "Can I update my #iOS to 11.0.3 now or are there still problems? #Apple #iPhone #iOS1103 @AppleSupport",
+        "clean_customer_text": "Can I update my #iOS to 11.0.3 now or are there still problems? #Apple #iPhone #iOS1103",
+        "brand_reply": "@400562 We're here to help. We always recomend upgrading to the latest version of iOS, Just make sure to back up your device first.",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Oct 25 01:31:07 +0000 2017",
+        "similarity": 0.7271777987480164
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "The inquiry concerns a common software update process question that can be addressed using standard troubleshooting steps regarding wireless updates.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 17,
+    "golden_intent": "os_software_glitch",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@622682 Thanks for reaching out, we would be glad to help! Have you made a backup of your device in iCloud? https://t.co/4f8hwT5to6 Have you tried these steps to update using Wi-Fi? https://t.co/80YRnjDFDk",
+    "latency_seconds": 0.027
+  },
+  {
+    "customer_text": "@AppleSupport can Apple help? this has been so frstrating",
+    "intent": "other_unclear",
+    "confidence": 0.95,
+    "intent_reasoning": "The tweet is a general expression of frustration without providing any specific technical details about the issue.",
+    "draft_reply": "We're sorry to hear you've been frustrated. Please tell us more about the issue or product you are having trouble with, and we'll do our best to assist! \ud83c\udf4e",
+    "top_retrieval_similarity": 0.7447323203086853,
+    "precedents": [
+      {
+        "thread_id": 1305216,
+        "customer_text": "@115858 can you please tell me the Twitter handle for help with frequent flyer points with Apple purchases in Australia? Thx.",
+        "clean_customer_text": "can you please tell me the Twitter handle for help with frequent flyer points with Apple purchases in Australia? Thx.",
+        "brand_reply": "@424994 Great question! Let's have you reach out to your regional support for additional guidance here: https://t.co/IBIY3vMgPj",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 01:54:50 +0000 2017",
+        "similarity": 0.7447323203086853
+      },
+      {
+        "thread_id": 1329984,
+        "customer_text": "@AppleSupport did you get any issues with #AppleMusic recently? https://t.co/Yp0e83kB58",
+        "clean_customer_text": "did you get any issues with #AppleMusic recently?",
+        "brand_reply": "@242836 Our System Status website shows all is working. Are you continuing to have the same issues? https://t.co/7NVrDovSd8",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 03:47:27 +0000 2017",
+        "similarity": 0.7428768277168274
+      },
+      {
+        "thread_id": 1606757,
+        "customer_text": "TWITTER IS DOING IT TOO WHAT IS WRONG WITH IOS 11 @115858 @AppleSupport https://t.co/JWy2zKoDJs",
+        "clean_customer_text": "TWITTER IS DOING IT TOO WHAT IS WRONG WITH IOS 11",
+        "brand_reply": "@493569 We've got your back &amp; are glad to help with this. We've got a guide to share with you about this issue: https://t.co/xU1AGHStV6",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Nov 04 22:42:19 +0000 2017",
+        "similarity": 0.7346224188804626
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "Standard inquiry eligible for auto-reply.",
+    "escalation_method": "default_fallback",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 1,
+    "golden_intent": "other_unclear",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@663549 Thanks for reaching out.  Are these the steps you are following to install Windows with Boot Camp: https://t.co/bq81zP1for?",
+    "latency_seconds": 0.022
+  },
+  {
+    "customer_text": "Goddammit @115858 my upper case \u201ci\u201d has just disappeared again. It just came back with that release last week. Now what? This is beyond annoying",
+    "intent": "os_software_glitch",
+    "confidence": 0.98,
+    "intent_reasoning": "The user is experiencing a recurring keyboard/typing bug following a recent software release.",
+    "draft_reply": "We're sorry to hear you're running into this frustrating issue again. We're here to help look into why your uppercase 'i' is disappearing. Please DM us and we can go from there! \ud83d\udee0\ufe0f",
+    "top_retrieval_similarity": 0.7611854672431946,
+    "precedents": [
+      {
+        "thread_id": 2019635,
+        "customer_text": "fix it @AppleSupport please. i\ufe0f can\u2019t use \u201c I\ufe0f \u201c anymore. i\u2019ve updated my phone and everything. please.",
+        "clean_customer_text": "fix it please. i\ufe0f can\u2019t use \u201c I\ufe0f \u201c anymore. i\u2019ve updated my phone and everything. please.",
+        "brand_reply": "@597236 We'll gladly see how we can help. First, check out this article with steps to help: https://t.co/sDSg93LaFu DM us the results. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Nov 04 20:51:00 +0000 2017",
+        "similarity": 0.7611854672431946
+      },
+      {
+        "thread_id": 1515390,
+        "customer_text": "@115858 @AppleSupport what the heck is going on and why does my phone keep replacing my \u201cI\ufe0f\u201d with weird symbols?! https://t.co/7sxnKVwp22",
+        "clean_customer_text": "what the heck is going on and why does my phone keep replacing my \u201cI\ufe0f\u201d with weird symbols?!",
+        "brand_reply": "@471587 We're here for you. DM us and we'll go from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Nov 03 13:24:00 +0000 2017",
+        "similarity": 0.7452662587165833
+      },
+      {
+        "thread_id": 2185542,
+        "customer_text": "All my numbers wiped from my #Iphone @115858 not sure how but maybe it\u2019s a good thing\ud83d\ude33\ud83d\ude44 When are you going to fix this annoying problem? I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f really annoying!",
+        "clean_customer_text": "All my numbers wiped from my #Iphone not sure how but maybe it\u2019s a good thing\ud83d\ude33\ud83d\ude44 When are you going to fix this annoying problem? I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f I\ufe0f really annoying!",
+        "brand_reply": "@640069 We can help out with the contact numbers. Were any changes made to the device prior to them being removed? \n\nAs for the text replacement. Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/xXaXeeSRt9",
+        "has_followup": true,
+        "followup_text": "@AppleSupport Thanks done that already and it\u2019s still the annoying I\ufe0f pops up see? I\ufe0f went and did it again but you still see I\ufe0f",
+        "created_at": "Thu Nov 09 14:20:33 +0000 2017",
+        "similarity": 0.7440225481987
+      }
+    ],
+    "escalate": false,
+    "escalation_reason": "Standard inquiry eligible for auto-reply.",
+    "escalation_method": "default_fallback",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 10,
+    "golden_intent": "other_unclear",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@506045 We can help. Join us in DM so we can better assist you: https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.027
+  },
+  {
+    "customer_text": "@AppleSupport Face ID doesn\u2019t work with sunglasses on..................................",
+    "intent": "battery_power_issue",
+    "confidence": 0.5,
+    "intent_reasoning": "Parsed via fallback regex extractor.",
+    "draft_reply": "@customer We're here to help. Please reach out to us via DM and we'll get started, https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7495282888412476,
+    "precedents": [
+      {
+        "thread_id": 1586840,
+        "customer_text": "@AppleSupport why won\u2019t Face ID recognize me without my glasses? I thought it could in multiple ways",
+        "clean_customer_text": "why won\u2019t Face ID recognize me without my glasses? I thought it could in multiple ways",
+        "brand_reply": "@488161 We're here to help.  Please reach out to us via DM and we'll get started, https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sat Nov 04 13:16:55 +0000 2017",
+        "similarity": 0.7495282888412476
+      },
+      {
+        "thread_id": 987872,
+        "customer_text": "@115858 hey screenshots from FaceTime on iPhone 7 don\u2019t save anywhere. Please fix",
+        "clean_customer_text": "hey screenshots from FaceTime on iPhone 7 don\u2019t save anywhere. Please fix",
+        "brand_reply": "@354068 We\u2019re here to help. Let\u2019s team up in DM and we\u2019ll do our best to assist you. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Oct 11 22:47:48 +0000 2017",
+        "similarity": 0.6576213836669922
+      },
+      {
+        "thread_id": 1693359,
+        "customer_text": "\u201cCapital eye\u201d find this annoying #apple @115858 #iphoneglitch #I\ufe0f I\ufe0f?",
+        "clean_customer_text": "\u201cCapital eye\u201d find this annoying #apple #iphoneglitch #I\ufe0f I\ufe0f?",
+        "brand_reply": "@420560 Here\u2019s what you can do to work around the issue until it\u2019s fixed in a future software update: https://t.co/qODbOsp4wz",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Mon Nov 06 17:00:20 +0000 2017",
+        "similarity": 0.6516749858856201
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
+    "escalation_method": "low_confidence",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 12,
+    "golden_intent": "other_unclear",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@816263 We're happy to help you out with Face ID. Have you always had difficulty with Face ID and sunglasses, or is this a new pair that it does not recognize?",
+    "latency_seconds": 0.029
+  },
+  {
+    "customer_text": "I\u2019m so frustrated. My rear camera on my Iphone 6 Plus does not work any more! Is there a fix for this? @AppleSupport",
+    "intent": "hardware_screen_audio",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer reports a physical hardware failure regarding the rear camera.",
+    "draft_reply": "Having a working camera is important, and we understand your frustration. We'd love to look into this with you and help find a resolution. Please DM us the details so we can get started!",
+    "top_retrieval_similarity": 0.805875301361084,
+    "precedents": [
+      {
+        "thread_id": 10674,
+        "customer_text": "@AppleSupport after I upgraded my iPhone to iOS 11.0.3, the back camera and the flash stopped working. Could you do something?",
+        "clean_customer_text": "after I upgraded my iPhone to iOS 11.0.3, the back camera and the flash stopped working. Could you do something?",
+        "brand_reply": "@117960 Hi, we'll be happy to help. To start, let's give the troubleshooting steps in this article a try: https://t.co/r1DRfaFLIU",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Nov 01 00:32:56 +0000 2017",
+        "similarity": 0.805875301361084
+      },
+      {
+        "thread_id": 1703924,
+        "customer_text": "@AppleSupport Maybe you need to fix the iOS 11.1 issues :D My camera is still malfunctioning and none of the support guys doesn't even know a fix.",
+        "clean_customer_text": "Maybe you need to fix the iOS 11.1 issues :D My camera is still malfunctioning and none of the support guys doesn't even know a fix.",
+        "brand_reply": "@601046 Having a working camera is important. We'd love to look into this with you and get you a resolution. DM us to get started. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Nov 07 12:01:53 +0000 2017",
+        "similarity": 0.7890040874481201
+      },
+      {
+        "thread_id": 1522734,
+        "customer_text": "@AppleSupport the ios11.1 update has jacked up my phone camera thanks for the help",
+        "clean_customer_text": "the ios11.1 update has jacked up my phone camera thanks for the help",
+        "brand_reply": "@473176 What's going on with your camera? DM us the details and we'll work together to get things sorted. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Nov 03 15:54:36 +0000 2017",
+        "similarity": 0.7542440295219421
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "The inquiry concerns a physical hardware failure on an older device model, which requires human intervention to properly diagnose repair options and address the customer's expressed frustration.",
+    "escalation_method": "llm_reasoner (google/gemma-4-e4b (cached))",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 25,
+    "golden_intent": "other_unclear",
+    "golden_escalate": false,
+    "golden_escalation_reason": "Technical support query eligible for auto-handling via historical resolution pattern.",
+    "actual_brand_reply": "@774575 We've received your DM and will meet you there.",
+    "latency_seconds": 0.023
+  },
+  {
+    "customer_text": "@AppleSupport want to send a note about amazing help received following theft of iPhone while on vacation. How to?",
+    "intent": "other_unclear",
+    "confidence": 0.5,
+    "intent_reasoning": "Parsed via fallback regex extractor.",
+    "draft_reply": "We are so sorry to hear about your theft, but we're glad we could assist you during this difficult time. Your kind words mean a lot to our entire team! Thank you for reaching out. \u2764\ufe0f",
+    "top_retrieval_similarity": 0.7365608215332031,
+    "precedents": [
+      {
+        "thread_id": 2025707,
+        "customer_text": "@AppleSupport Hi, I would like to put a block on my phone thats been stolen. (Iphone 7+).",
+        "clean_customer_text": "Hi, I would like to put a block on my phone thats been stolen. (Iphone 7+).",
+        "brand_reply": "@599054 We'd love to help! This article goes over what you can do if your iPhone is lost or stolen: https://t.co/fUoKdx4Yut",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Oct 18 21:07:35 +0000 2017",
+        "similarity": 0.7365608215332031
+      },
+      {
+        "thread_id": 715648,
+        "customer_text": "If I inadvertently deleted note month ago in Notes app &amp; have been backing up daily to iCloud Possible to retrieve that note?\n@AppleSupport",
+        "clean_customer_text": "If I inadvertently deleted note month ago in Notes app &amp; have been backing up daily to iCloud Possible to retrieve that note?",
+        "brand_reply": "@287945 Glad you reached out. Please DM us and we can chat. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 06 03:20:18 +0000 2017",
+        "similarity": 0.7230418920516968
+      },
+      {
+        "thread_id": 1305216,
+        "customer_text": "@115858 can you please tell me the Twitter handle for help with frequent flyer points with Apple purchases in Australia? Thx.",
+        "clean_customer_text": "can you please tell me the Twitter handle for help with frequent flyer points with Apple purchases in Australia? Thx.",
+        "brand_reply": "@424994 Great question! Let's have you reach out to your regional support for additional guidance here: https://t.co/IBIY3vMgPj",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 27 01:54:50 +0000 2017",
+        "similarity": 0.7041240334510803
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Deterministic trigger: Stolen hardware or law enforcement involvement requires human specialist handling.",
+    "escalation_method": "deterministic_rule",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 11,
+    "golden_intent": "theft_lost_legal",
+    "golden_escalate": true,
+    "golden_escalation_reason": "Legal threat, stolen device, or police involvement requires immediate human/specialist handling.",
+    "actual_brand_reply": "@292747 We want to hear about your experience. The following link is a great place to submit that feedback: https://t.co/eTPVYVFyd8",
+    "latency_seconds": 0.018
+  },
+  {
+    "customer_text": "@AppleSupport my friends iphone was stolen in Vietnam last night. Can we give you the IMEI to block it?",
+    "intent": "theft_lost_legal",
+    "confidence": 0.99,
+    "intent_reasoning": "The user is reporting a stolen device and seeking assistance to block it using the IMEI.",
+    "draft_reply": "@customer We'd love to help! This article goes over what you can do if your iPhone is lost or stolen: [Insert relevant official support link regarding Lost/Stolen devices].",
+    "top_retrieval_similarity": 0.7696027755737305,
+    "precedents": [
+      {
+        "thread_id": 2025707,
+        "customer_text": "@AppleSupport Hi, I would like to put a block on my phone thats been stolen. (Iphone 7+).",
+        "clean_customer_text": "Hi, I would like to put a block on my phone thats been stolen. (Iphone 7+).",
+        "brand_reply": "@599054 We'd love to help! This article goes over what you can do if your iPhone is lost or stolen: https://t.co/fUoKdx4Yut",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Wed Oct 18 21:07:35 +0000 2017",
+        "similarity": 0.7696027755737305
+      },
+      {
+        "thread_id": 2438485,
+        "customer_text": "@AppleSupport You know what?! Why I didn\u2019t restart the iphone before tweeting that is beyond me. Seem to be OK now. Thank you!",
+        "clean_customer_text": "You know what?! Why I didn\u2019t restart the iphone before tweeting that is beyond me. Seem to be OK now. Thank you!",
+        "brand_reply": "@699438 No worries at all. We're glad to know things are working properly. If there is anything we can do to assist you in the future, please don't hesitate to reach back out.",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Nov 14 22:32:20 +0000 2017",
+        "similarity": 0.7028219699859619
+      },
+      {
+        "thread_id": 1505583,
+        "customer_text": "#iOS11 stole the time from my lock screen.. lol @115858 #unhappy https://t.co/KOESxbPLCD",
+        "clean_customer_text": "#iOS11 stole the time from my lock screen.. lol #unhappy",
+        "brand_reply": "@469422 Let's work to get that time back on the lock screen. Which iOS version and iPhone model do you have currently?",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Nov 03 10:33:01 +0000 2017",
+        "similarity": 0.7006164193153381
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Deterministic trigger: Stolen hardware or law enforcement involvement requires human specialist handling.",
+    "escalation_method": "deterministic_rule",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 33,
+    "golden_intent": "theft_lost_legal",
+    "golden_escalate": true,
+    "golden_escalation_reason": "Legal threat, stolen device, or police involvement requires immediate human/specialist handling.",
+    "actual_brand_reply": "@536634 If that device had 'Find my iPhone' enabled, you can remotely lock that iPhone using these steps here: https://t.co/HZF9yw6v5b. Any blocks using the IMEI number would be handled by the phone's carrier. You'll also want to reach out to local law enforcement.",
+    "latency_seconds": 0.025
+  },
+  {
+    "customer_text": "@AppleSupport Dear @AppleSupport @116333 we\u2019ve spoken in the past about my faulty iPhone 8 Plus and let me assure u that ur help was ZERO.\nNonetheless, I have initiated legal action against Apple in the consumer court to save my rights. Rest assured, I am capable of helping myself from Apple",
+    "intent": "theft_lost_legal",
+    "confidence": 0.98,
+    "intent_reasoning": "The customer is escalating an unresolved product issue by initiating legal action against the company.",
+    "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The user is a highly frustrated customer with an iPhone 8 Plus, alleging past poor service (\"help was ZERO\"), and has escalated the issue by initiating legal action against Apple.\n2.  **Determine Intent/Tone:** The intent is `theft_lost_legal`. The tone is aggressive, adversarial, and highly escalated.\n3.  **Analyze Constraints & Goal:**\n    *   Role: Official Apple Support (@AppleSupport).\n    *   Tone: Polite, empathetic, concise, technically accurate.\n    *   Constraint 1: Do NOT invent details (serial numbers, refund amounts, etc.).\n    *   Constraint 2: Ground strictly in provided precedents.\n    *   Constraint 3: Concise (under 240 characters/tweet length).\n    *   Goal: De-escalate and move the conversation to a private channel (DM) while acknowledging willingness to help.\n4.  **Analyze Precedents:** All precedents handle extreme frustration regarding faulty devices (iPhone 8 Plus) by offering help and directing the conversation to a DM, usually asking for more details about the current issue.\n    *   Precedent 1: Extreme frustration -> \"We want to help. What seems to be the issue? Let us know in DM.\"\n    *   Precedent 2: Repeated issues/need for recall -> \"We'd like to help. Follow up with us in DM. Tell us more about the issue you're experiencing there.\"\n    *   Precedent 3: Software breakdown/frustration -> \"We want to help. DM us the what app(s) you were using...\"\n5.  **Apply Strategy to Current Case:** The current case is the most escalated, but the underlying issue (faulty phone/past issues) aligns with the precedents. The safest and most consistent approach is to acknowledge the situation and invite them to DM for specific details, mirroring the structure of the precedents.\n6.  **Drafting - Attempt 1 (Focus on empathy and action):** We are sorry to hear about your experience. We want to help resolve this for you. Please DM us the details of the current issue so we can assist. [Link] (Too generic, needs to match the established pattern).\n7.  **Drafting - Attempt 2 (Matching Precedent Tone):** We want to help address your concerns regarding your iPhone 8 Plus. Please follow up with us in a DM so we can understand the current situation and assist you. [Link]\n8.  **Refining for Conciseness & Official Voice (Final Check):** Keep it brief, polite, and action-oriented.\n\n*(Self-Correction: The precedents use a specific phrase structure (\"We want to help,\" followed by the invitation to DM and a link). I must maintain this",
+    "top_retrieval_similarity": 0.774526834487915,
+    "precedents": [
+      {
+        "thread_id": 1635731,
+        "customer_text": "Dear @115858, I\ufe0f am tired of this! I\ufe0f think you need to fix this. I\ufe0f am over it! I\ufe0f know your other customers are too. #iphone",
+        "clean_customer_text": "Dear , I\ufe0f am tired of this! I\ufe0f think you need to fix this. I\ufe0f am over it! I\ufe0f know your other customers are too. #iphone",
+        "brand_reply": "@500339 We want to help. What seems to be the issue? Let us know in DM. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 05 18:48:10 +0000 2017",
+        "similarity": 0.774526834487915
+      },
+      {
+        "thread_id": 435829,
+        "customer_text": "@115858 y\u2019all need to do a recall on the 8 plus I\u2019ve had to exchange my phone twice and I\u2019m still having issues with the one I have now.",
+        "clean_customer_text": "y\u2019all need to do a recall on the 8 plus I\u2019ve had to exchange my phone twice and I\u2019m still having issues with the one I have now.",
+        "brand_reply": "@218525 We'd like to help. Follow up with us in DM. Tell us more about the issue you're experiencing there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Oct 10 15:40:11 +0000 2017",
+        "similarity": 0.759406566619873
+      },
+      {
+        "thread_id": 2300098,
+        "customer_text": "@AppleSupport \nI love you @115858 but why you do that to us \ud83d\ude2d. My iPhone 8+ software broke down. https://t.co/Jdr3dKULPD",
+        "clean_customer_text": "I love you but why you do that to us \ud83d\ude2d. My iPhone 8+ software broke down.",
+        "brand_reply": "@667579 We want to help. DM us the what app(s) you were using when the Apple logo appeared: https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Sun Nov 12 11:44:02 +0000 2017",
+        "similarity": 0.7573451399803162
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Deterministic trigger: Explicit legal action or lawsuit threat requires formal legal/risk escalation.",
+    "escalation_method": "deterministic_rule",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 42,
+    "golden_intent": "theft_lost_legal",
+    "golden_escalate": true,
+    "golden_escalation_reason": "Legal threat, stolen device, or police involvement requires immediate human/specialist handling.",
+    "actual_brand_reply": "@244623 Thank you for your time and patience. Again, we're happy to do anything we can to help. DM us and we can go from there. https://t.co/GDrqU22YpT",
+    "latency_seconds": 0.042
+  },
+  {
+    "customer_text": "@AppleSupport Hello - hoping I might be able to get some support with a brand new stolen phone - police report filed yesterday. Unable to track down. Please help if you can!",
+    "intent": "theft_lost_legal",
+    "confidence": 0.99,
+    "intent_reasoning": "The customer is reporting a stolen device and has filed a police report seeking assistance.",
+    "draft_reply": "@customer We are sorry to hear about your stolen phone. Please send us a DM so we can look into the situation and see how we might be able to help. https://t.co/GDrqU22YpT",
+    "top_retrieval_similarity": 0.7431912422180176,
+    "precedents": [
+      {
+        "thread_id": 2371235,
+        "customer_text": "So how come UPS told me my phone X might be stolen or missing and no one is doing anything about it?? I call one company and keep getting directed to the another  @AppleSupport @sprintcare @UPSHelp",
+        "clean_customer_text": "So how come UPS told me my phone X might be stolen or missing and no one is doing anything about it?? I call one company and keep getting directed to the another",
+        "brand_reply": "@237906 Hey, we'd like to hear more about what's going on. Send us a DM and we'll go from there. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Tue Nov 14 00:18:14 +0000 2017",
+        "similarity": 0.7431912422180176
+      },
+      {
+        "thread_id": 2150303,
+        "customer_text": "@115858 can we get a update for this A? Situation and a update for this spinning circle on my phone all day! Sheesh!!",
+        "clean_customer_text": "can we get a update for this A? Situation and a update for this spinning circle on my phone all day! Sheesh!!",
+        "brand_reply": "@631969 We'd like to look into this spinning circle you are experiencing on your phone. Let us know in DM when you are seeing this. https://t.co/GDrqU22YpT",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Thu Nov 09 01:04:39 +0000 2017",
+        "similarity": 0.7284864187240601
+      },
+      {
+        "thread_id": 301111,
+        "customer_text": "Thanks @115858 for creating the IOS 11......SIKE \ud83d\ude21 it has messed up my phone. Can\u2019t receive texts or emails anymore \ud83d\ude11",
+        "clean_customer_text": "Thanks for creating the IOS 11......SIKE \ud83d\ude21 it has messed up my phone. Can\u2019t receive texts or emails anymore \ud83d\ude11",
+        "brand_reply": "@187816 We'd like to improve your experience with iOS 11. Are you able to send emails and messages?",
+        "has_followup": false,
+        "followup_text": null,
+        "created_at": "Fri Oct 06 17:54:19 +0000 2017",
+        "similarity": 0.7183554172515869
+      }
+    ],
+    "escalate": true,
+    "escalation_reason": "Deterministic trigger: Stolen hardware or law enforcement involvement requires human specialist handling.",
+    "escalation_method": "deterministic_rule",
+    "model_used": "google/gemma-4-e4b (cached)",
+    "eval_id": 44,
+    "golden_intent": "theft_lost_legal",
+    "golden_escalate": true,
+    "golden_escalation_reason": "Legal threat, stolen device, or police involvement requires immediate human/specialist handling.",
+    "actual_brand_reply": "@425179 We're sorry to hear this. Let's see what we can find out. Have you tried to track it with Find My iPhone? This article shows you how to do that: https://t.co/fVZGIap0bj",
+    "latency_seconds": 0.034
+  }
+]

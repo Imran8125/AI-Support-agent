@@ -1,0 +1,25 @@
+# Virtual environment
+.venv/
+env/
+venv/
+
+# Environment variables & secrets
+.env
+
+# Data directory (per PRD §8, large raw and processed files not committed)
+data/kaggle-dataset/
+data/processed/
+*.parquet
+*.csv.gz
+
+# Cache & artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.cache/
+.DS_Store
+
+# SQLite cache
+*.db
+*.sqlite

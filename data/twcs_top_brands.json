@@ -1,0 +1,124 @@
+{
+  "total_rows": 2811774,
+  "inbound_count": 1537843,
+  "outbound_count": 1273931,
+  "unique_brands_count": 108,
+  "null_in_response_to": 794335,
+  "null_response_id": 1040629,
+  "sample_dates": [
+    "Tue Oct 31 22:10:47 +0000 2017",
+    "Sun Dec 03 00:08:58 +0000 2017",
+    "Sat Dec 02 23:59:14 +0000 2017",
+    "Thu Nov 09 04:34:26 +0000 2017",
+    "Thu Nov 09 04:47:29 +0000 2017",
+    "Mon Nov 06 02:17:00 +0000 2017",
+    "Mon Nov 06 03:05:47 +0000 2017",
+    "Thu Nov 09 00:50:49 +0000 2017",
+    "Thu Nov 09 02:04:29 +0000 2017",
+    "Sun Nov 19 12:03:53 +0000 2017",
+    "Sun Nov 19 12:04:43 +0000 2017",
+    "Tue Nov 21 22:01:04 +0000 2017"
+  ],
+  "top_25_brands": [
+    {
+      "brand": "AmazonHelp",
+      "replies": 169840
+    },
+    {
+      "brand": "AppleSupport",
+      "replies": 106860
+    },
+    {
+      "brand": "Uber_Support",
+      "replies": 56270
+    },
+    {
+      "brand": "SpotifyCares",
+      "replies": 43265
+    },
+    {
+      "brand": "Delta",
+      "replies": 42253
+    },
+    {
+      "brand": "Tesco",
+      "replies": 38573
+    },
+    {
+      "brand": "AmericanAir",
+      "replies": 36764
+    },
+    {
+      "brand": "TMobileHelp",
+      "replies": 34317
+    },
+    {
+      "brand": "comcastcares",
+      "replies": 33031
+    },
+    {
+      "brand": "British_Airways",
+      "replies": 29361
+    },
+    {
+      "brand": "SouthwestAir",
+      "replies": 28977
+    },
+    {
+      "brand": "VirginTrains",
+      "replies": 27817
+    },
+    {
+      "brand": "Ask_Spectrum",
+      "replies": 25860
+    },
+    {
+      "brand": "XboxSupport",
+      "replies": 24557
+    },
+    {
+      "brand": "sprintcare",
+      "replies": 22381
+    },
+    {
+      "brand": "hulu_support",
+      "replies": 21872
+    },
+    {
+      "brand": "sainsburys",
+      "replies": 19466
+    },
+    {
+      "brand": "GWRHelp",
+      "replies": 19364
+    },
+    {
+      "brand": "AskPlayStation",
+      "replies": 19098
+    },
+    {
+      "brand": "ChipotleTweets",
+      "replies": 18749
+    },
+    {
+      "brand": "VerizonSupport",
+      "replies": 17966
+    },
+    {
+      "brand": "UPSHelp",
+      "replies": 17817
+    },
+    {
+      "brand": "ATVIAssist",
+      "replies": 17650
+    },
+    {
+      "brand": "O2",
+      "replies": 16212
+    },
+    {
+      "brand": "Safaricom_Care",
+      "replies": 16077
+    }
+  ]
+}

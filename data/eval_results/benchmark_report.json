@@ -1,0 +1,159 @@
+{
+  "dataset": "AppleSupport (TWCS Held-out Split)",
+  "golden_set_size": 36,
+  "classification_comparison": {
+    "baseline_a": {
+      "name": "Majority Class",
+      "accuracy": 0.1111,
+      "macro_f1": 0.0222
+    },
+    "baseline_b": {
+      "name": "TF-IDF + LogReg",
+      "accuracy": 0.6944,
+      "macro_f1": 0.6912
+    },
+    "system_llm": {
+      "name": "AppleSupport AI Agent",
+      "accuracy": 0.6111,
+      "macro_f1": 0.6008
+    }
+  },
+  "escalation_metrics": {
+    "accuracy": 0.5833,
+    "precision": 0.2105,
+    "recall": 1.0,
+    "f1": 0.3478
+  },
+  "reply_quality_judge": {
+    "num_judged": 15,
+    "rubric_averages": {
+      "groundedness": 4.87,
+      "correctness": 4.67,
+      "tone_match": 4.93,
+      "resolution_likelihood": 4.6
+    },
+    "overall_mean": 4.77
+  },
+  "human_judge_agreement": {
+    "sample_size": 14,
+    "pearson_r": 0.8219,
+    "pearson_p_value": 0.0003105480026628389,
+    "spearman_rho": 0.6803,
+    "quadratic_weighted_cohen_kappa": 0.1954,
+    "mean_absolute_error": 0.5893,
+    "human_mean": 4.18,
+    "judge_mean": 4.77
+  },
+  "top_failure_cases": [
+    {
+      "eval_id": 2,
+      "text": "Somebody hacked my Apple account and @115858 ain\u2019t doing nothing to fix it.",
+      "true_intent": "account_icloud_security",
+      "pred_intent": "account_icloud_security",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "The inquiry involves a critical account security breach (hacking), which requires immediate, personalized verification and recovery steps only a human specialist can provide.",
+      "draft_reply": "@customer We want to help you regain control of your account. Please provide us with more details regarding the security issue via DM here: [Link/Instruction]",
+      "failure_type": "Escalation Mismatch"
+    },
+    {
+      "eval_id": 21,
+      "text": "\u0130cloud'da yedekledi\u011fimiz fotolar\u0131 bilgisayara nas\u0131l al\u0131yoruz? @AppleSupport",
+      "true_intent": "account_icloud_security",
+      "pred_intent": "apps_services_media",
+      "true_escalate": false,
+      "pred_escalate": false,
+      "escalation_reason": "The inquiry is a common procedural 'how-to' question regarding iCloud photo synchronization and download, which can be fully addressed by the AI assistant.",
+      "draft_reply": "Thinking Process:\n\n1.  **Analyze the Request:** The user wants to know how to download photos backed up in iCloud onto a computer (PC).\n    *   *Original message:* \"\u0130cloud'da yedekledi\u011fimiz fotolar\u0131 bilgisayara nas\u0131l al\u0131yoruz? @AppleSupport\" (How do we get the photos backed up in iCloud onto the computer?)\n    *   *Intent:* apps_services_media (iCloud Photos/Download).\n\n2.  **Analyze the Constraints & Persona:**\n    *   Role: Official Apple Support Agent (@AppleSupport).\n    *   Tone: Polite, empathetic, concise, technically accurate.\n    *   Format: Twitter reply (under 240 characters).\n    *   Crucial Rule: Ground response strictly in provided precedents. Do not invent details/links.\n\n3.  **Analyze the Precedents:**\n    *   [P1] (iCloud Photos issue, directs to specialized team/link).\n    *   [P2] (Language barrier, directs to specific language support links).\n    *   [P3] (Downloading issue/pain point, directs to DM for more info/specific link).\n\n4.  **Determine the Best Course of Action:**\n    *   The user is asking a technical \"how-to\" question (downloading photos).\n    *   Precedents P1 and P3 handle technical issues related to iCloud/downloading by moving the conversation off Twitter or directing them to a specific support flow.\n    *   Since this is a technical process question that might require troubleshooting steps (like using the iCloud website, syncing via Photos app, etc.), the most appropriate action, mirroring P3 (which deals with downloading pain points), is to gather more information or move the conversation into a private channel (DM).\n\n5.  **Drafting - Attempt 1 (Focus on moving the conversation):**\n    *   *Goal:* Acknowledge the request and ask for more details to provide accurate instructions.\n    *   *Draft:* We'd like to help you download your photos! To give you the best instructions, please DM us and we'll guide you through the process. Thanks! [Link/Handle] (This mirrors P3 structure).\n\n6.  **Refining and Applying Tone/Constraints:**\n    *   The question is simple (\"How do I download?\"). A direct \"DM us\" might seem abrupt. However, given the precedents push complex issues to DM, this is the safest approach if a simple link isn't available.\n    *   Let's use the structure of P3, as it deals with the \"downloading\" pain point.\n\n7.  **Final Polish (Concise, Empathetic, Actionable):**\n    *   Acknowledge the task. Offer help. Direct",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 28,
+      "text": "@AppleSupport Please, this alert doesn\u2019t tell me what I\u2019m giving my password to or what for and it bothers me constantly. How am I supposed to know some third party app isn\u2019t trying to scam me? https://t.co/qm5kVavhqt",
+      "true_intent": "account_icloud_security",
+      "pred_intent": "account_icloud_security",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "Deterministic trigger: High-hostility sentiment or accusation of fraud/scam warrants human review.",
+      "draft_reply": "@customer We understand your concern about security alerts. If you are unsure if a prompt or alert is legitimate, please check out our official guides on identifying and reporting suspicious activity for your peace of mind. [Link to security resource]",
+      "failure_type": "Escalation Mismatch"
+    },
+    {
+      "eval_id": 34,
+      "text": "How tf am I randomly gonna get signed out of my iCloud and then when I type in the correct info it doesn\u2019t sign me in \ud83d\ude11 @AppleSupport",
+      "true_intent": "account_icloud_security",
+      "pred_intent": "account_icloud_security",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "The issue involves account security and sign-in failure, which often requires personalized troubleshooting or verification beyond the scope of automated support.",
+      "draft_reply": "@customer We're here to help with any issues you may be having regarding your sign-in trouble. Please join us in a DM so we can look into this for you. https://t.co/GDrqU22YpT",
+      "failure_type": "Escalation Mismatch"
+    },
+    {
+      "eval_id": 5,
+      "text": "@AppleSupport I am trying to reset my security questions and it is not allowing me to. I am now locked out of iMessage",
+      "true_intent": "apps_services_media",
+      "pred_intent": "account_icloud_security",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "The issue involves account security and being locked out of iMessage, requiring human verification to safely assist with password or security setting resets.",
+      "draft_reply": "@customer We understand this is frustrating. To help you regain access and sort out the security questions, please DM us some details about your account and devices. We'll take it from there! https://t.co/GDrqU22YpT",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 16,
+      "text": "Hi @AppleSupport i'm having problems (again) with your ever-bugging iTunes software. plz help",
+      "true_intent": "apps_services_media",
+      "pred_intent": "os_software_glitch",
+      "true_escalate": false,
+      "pred_escalate": false,
+      "escalation_reason": "The inquiry describes a common software glitch with iTunes, which can likely be addressed using initial diagnostic steps available in the knowledge base.",
+      "draft_reply": "We understand this is frustrating. We want to help you with iTunes! Please DM us the details of the issue so we can look into it for you.",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 27,
+      "text": "@AppleSupport I am disabled out of my iPhone and is telling me to connect to iTunes. I am receiving an error code of 0xE000015. Please help",
+      "true_intent": "apps_services_media",
+      "pred_intent": "os_software_glitch",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "The specific error code (0xE000015) indicates a critical recovery mode issue that requires guided, expert troubleshooting to prevent data loss or unsuccessful attempts.",
+      "draft_reply": "@customer We understand how frustrating this is. Since you're seeing an error code, please move to DM so we can look into this further and help you troubleshoot. https://t.co/GDrqU22YpT",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 9,
+      "text": "Every time I look away from my phone and look back it drops like 8 percent, figure this battery thing the fuck out @115858",
+      "true_intent": "battery_power_issue",
+      "pred_intent": "battery_power_issue",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "Deterministic trigger: High-hostility sentiment or accusation of fraud/scam warrants human review.",
+      "draft_reply": "@customer We know how important a reliable battery is. That rapid drop sounds concerning. Please DM us your device model and iOS version so we can look into this for you!",
+      "failure_type": "Escalation Mismatch"
+    },
+    {
+      "eval_id": 13,
+      "text": "@116333 @115858 Mac shuts down when put in Sleep, High Sierra bricked Mac, AirPods DO NOT connect automatically, Mac Messages not deleted via cloud, Calculator defaults to 172, Root vulnerabilities. Is this the new Apple quality? Or, is it just about the $ and investors now?",
+      "true_intent": "connectivity_network",
+      "pred_intent": "battery_power_issue",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
+      "draft_reply": "@customer We certainly want you to have",
+      "failure_type": "Intent Misclassification"
+    },
+    {
+      "eval_id": 38,
+      "text": "Disappointing service from @115858. Covent Garden \u201cgenius\u201d - rude, patronising and unhelpful. My location and WiFi can still not be found!",
+      "true_intent": "connectivity_network",
+      "pred_intent": "other_unclear",
+      "true_escalate": false,
+      "pred_escalate": true,
+      "escalation_reason": "Soft threshold: Classifier confidence (0.50) below safe threshold (0.65).",
+      "draft_reply": "@customer That\u2019s not the experience we want you to have. We\u2019d like to take a closer look at this with you. Meet us in DM to proceed. https://t.co/GDrqU22YpT",
+      "failure_type": "Intent Misclassification"
+    }
+  ]
+}
