@@ -11,7 +11,7 @@ An end-to-end, production-grade AI support agent pipeline for **AppleSupport** b
 Ensure you have Python 3.9+ installed:
 ```bash
 # Clone the repository
-git clone <repo-url>
+git clone https://github.com/Imran8125/AI-Support-agent.git
 cd "AI Support agent"
 
 # Create and activate virtual environment
